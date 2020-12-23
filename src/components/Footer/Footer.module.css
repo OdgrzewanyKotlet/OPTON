@@ -1,10 +1,10 @@
 .Footer {
   background-color: #282828;
-  height: 180px;
+  height: 200px;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 10px 20px 10px 20px;
+  padding: 20px 20px 20px 20px;
   display: flex;
   flex-flow: row;
   justify-content: space-between;

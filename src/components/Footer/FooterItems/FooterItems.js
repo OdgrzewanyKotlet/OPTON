@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./FooterItems.module.css";
 import FooterItem from "./FooterItem/FooterItem";
+import CircleLogo from "../CircleLogo/CircleLogo";
 
 const footerItems = (props) => (
   <div className={styles.FooterItems}>
@@ -24,6 +25,7 @@ const footerItems = (props) => (
       <br />
       TEMP3
     </FooterItem>
+    <CircleLogo />
   </div>
 );
 
