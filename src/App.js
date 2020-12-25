@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
-import Footer from "./components/Footer/Footer";
 
 import Layout from "./hoc/Layout/Layout";
 import Photovoltaics from "./components/Photovoltaics/Photovoltaics";
@@ -13,7 +12,6 @@ class App extends Component {
     return (
       <div className="App">
         <Layout>
-            Test<Footer></Footer>
           <Switch>
             <Route path="/instalacje-elektryczne" component={Electricity} />
             <Route path="/instalacje-alarmowe" component={Alarms} />
@@ -23,7 +21,6 @@ class App extends Component {
         </Layout>
       </div>
     );
-      
   }
 }
 

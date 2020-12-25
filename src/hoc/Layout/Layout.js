@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import styles from "./Layout.module.css";
 import Toolbar from "../../components/Navigation/Toolbar/Toolbar";
 import SideDrawer from "../../components/Navigation/SideDrawer/SideDrawer";
+import Footer from "../../components/Footer/Footer";
 
 class Layout extends Component {
   state = {
@@ -28,6 +29,7 @@ class Layout extends Component {
           closed={this.sideDrawerClosedHandler}
         />
         <main className={styles.Content}>{this.props.children}</main>
+        <Footer />
       </React.Fragment>
     );
   }

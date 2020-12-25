@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./FooterItems.module.css";
 import FooterItem from "./FooterItem/FooterItem";
 import CircleLogo from "../CircleLogo/CircleLogo";
+import { NavLink } from "react-router-dom";
 
 const footerItems = (props) => (
   <div className={styles.FooterItems}>
@@ -20,23 +21,28 @@ const footerItems = (props) => (
       Bydgoszcz 85-225
     </FooterItem>
     <FooterItem header="MENU">
-<<<<<<< Updated upstream
-      TEMP1 <br />
-      TEMP2,
-      <br />
-      TEMP3
-=======
       <nav>
         <ul>
-          <li>Strona główna</li>
-          <li>Fotowoltaika</li>
-          <li>Instalacje elektryczne</li>
-          <li>Instalacje alarmowe</li>
-          <li>Kontakt</li>
+          <li>
+            <NavLink to="/">Strona główna</NavLink>
+          </li>
+          <li>
+            <NavLink to="/">Fotowoltaika</NavLink>
+          </li>
+          <li>
+            <NavLink to="/instalacje-elektryczne">
+              Instalacje elektryczne
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/instalacje-alarmowe">Instalacje alarmowe</NavLink>
+          </li>
+          <li>
+            <NavLink to="/kontakt">Kontakt</NavLink>
+          </li>
           <li>Polityka prywatności</li>
         </ul>
       </nav>
->>>>>>> Stashed changes
     </FooterItem>
     <CircleLogo />
   </div>
