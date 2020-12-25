@@ -20,10 +20,23 @@ const footerItems = (props) => (
       Bydgoszcz 85-225
     </FooterItem>
     <FooterItem header="MENU">
+<<<<<<< Updated upstream
       TEMP1 <br />
       TEMP2,
       <br />
       TEMP3
+=======
+      <nav>
+        <ul>
+          <li>Strona główna</li>
+          <li>Fotowoltaika</li>
+          <li>Instalacje elektryczne</li>
+          <li>Instalacje alarmowe</li>
+          <li>Kontakt</li>
+          <li>Polityka prywatności</li>
+        </ul>
+      </nav>
+>>>>>>> Stashed changes
     </FooterItem>
     <CircleLogo />
   </div>
