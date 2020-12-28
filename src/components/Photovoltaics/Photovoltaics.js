@@ -7,6 +7,7 @@ import Button from "../UI/Button/Button";
 import Benefits from "./Benefits/Benefits";
 import Services from "./Services/Services";
 import FAQ from "./FAQ/FAQ";
+import Managment from "./Managment/Managment";
 import CompaniesCarousel from "./CompaniesCarousel/CompaniesCarousel";
 
 class Photovoltaics extends Component {
@@ -56,6 +57,7 @@ class Photovoltaics extends Component {
           </div>
         </BasicSection>
         <Benefits />
+        <Managment />
         <BasicSection>
           <h2>Finansowanie</h2>
           Zyskaj czas i pieniądze dzięki naszej ścisłej współpracy z niezależną
