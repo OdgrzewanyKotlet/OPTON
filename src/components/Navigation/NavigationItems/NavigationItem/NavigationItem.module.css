@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap");
+
 .NavigationItem {
   margin: 10px 0;
   box-sizing: border-box;
@@ -15,29 +17,37 @@
 .NavigationItem a:hover,
 .NavigationItem a:active,
 .NavigationItem a.active {
-  color: blue;
+  color: #314089;
 }
 
 @media (min-width: 500px) {
   .NavigationItem {
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
     margin: 0;
     display: flex;
     height: 100%;
     width: auto;
+    letter-spacing: 0.05em;
     align-items: center;
   }
 
   .NavigationItem a {
-    color: gray;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #7a7a7a;
     height: 100%;
-    padding: 16px 10px;
+    padding: 15px 15px;
     border-bottom: 4px solid transparent;
   }
 
   .NavigationItem a:hover,
   .NavigationItem a:active,
   .NavigationItem a.active {
-    border-bottom: 4px solid blue;
-    color: blue;
+    border-bottom: 4px solid #314089;
+    color: #314089;
   }
 }
