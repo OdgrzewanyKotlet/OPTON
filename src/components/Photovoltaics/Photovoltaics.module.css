@@ -35,3 +35,12 @@
   color: grey;
   line-height: 200%;
 }
+
+.FAQ {
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+.FAQ h2 {
+  margin-bottom: 10px;
+}
