@@ -1,0 +1,37 @@
+.Contact {
+  background-position-y: 25%;
+  background-image: url("../../assets/images/photovolt-contact.jpg");
+  background-size: cover;
+  height: 250px;
+}
+
+.Contact h2 {
+  color: white;
+}
+
+.Wrapper {
+  display: flex;
+}
+
+.FirstStepTitle {
+  width: 45%;
+  height: 100%;
+  text-align: left;
+  text-justify: auto;
+  margin-left: 5%;
+  margin-top: 11%;
+  margin-bottom: 10%;
+}
+
+.FirstStepContent {
+  width: 55%;
+  height: 100%;
+  text-justify: auto;
+  text-align: left;
+  margin-right: 5%;
+  margin-top: 4%;
+  margin-bottom: 80px;
+  font-size: 18px;
+  color: grey;
+  line-height: 200%;
+}
