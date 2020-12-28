@@ -1,0 +1,10 @@
+.Contact {
+  background-position-y: 25%;
+  background-image: url("../../assets/images/photovolt-contact.jpg");
+  background-size: cover;
+  height: 250px;
+}
+
+.Contact h2 {
+  color: white;
+}
