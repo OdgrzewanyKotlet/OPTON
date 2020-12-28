@@ -10,7 +10,7 @@ import Contact from "./components/Contact/Contact";
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="App">
         <Layout>
           <Switch>
             <Route path="/instalacje-elektryczne" component={Electricity} />

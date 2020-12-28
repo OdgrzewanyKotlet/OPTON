@@ -1,0 +1,25 @@
+.FooterItem {
+  color: #808285;
+  font-size: 10px;
+  margin-right: 100px;
+  text-align: left;
+}
+
+.FooterItem h3 {
+  font-size: 15px;
+}
+
+.FooterItem ul li {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.FooterItem a {
+  text-decoration: none;
+  color: #007cba;
+}
+
+.FooterItem a:hover,
+.FooterItem a:active {
+  color: #54595f;
+}
