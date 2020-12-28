@@ -4,9 +4,10 @@ import styles from "./Photovoltaics.module.css";
 import FirstSection from "../FirstSection/FirstSection";
 import BasicSection from "../BasicSection/BasicSection";
 import Button from "../UI/Button/Button";
+import Services from "./Services/Services";
 
 class Photovoltaics extends Component {
-  buttonClickedHandler = () => {
+  contactButtonClickedHandler = () => {
     this.props.history.push({ pathname: "/kontakt" });
   };
 
@@ -52,8 +53,11 @@ class Photovoltaics extends Component {
           </div>
         </BasicSection>
         <BasicSection>
+          <Services />
+        </BasicSection>
+        <BasicSection customClass={styles.Contact}>
           <h2>Dołącz do grona naszych klientów!</h2>
-          <Button clicked={this.buttonClickedHandler}>
+          <Button clicked={this.contactButtonClickedHandler}>
             SKONTAKTUJ SIĘ Z NAMI
           </Button>
         </BasicSection>
