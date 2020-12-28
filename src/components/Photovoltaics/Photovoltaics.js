@@ -4,6 +4,7 @@ import styles from "./Photovoltaics.module.css";
 import FirstSection from "../FirstSection/FirstSection";
 import BasicSection from "../BasicSection/BasicSection";
 import Button from "../UI/Button/Button";
+import Benefits from "./Benefits/Benefits";
 import Services from "./Services/Services";
 
 class Photovoltaics extends Component {
@@ -18,6 +19,7 @@ class Photovoltaics extends Component {
           title="Fotowoltaika dla Twojego domu i biznesu"
           content="Postaw na odnawialne źródła energii wykorzystując nowoczesne rozwiązania z zakresu technologii fotowoltaicznych i obniż swój rachunek za prąd."
           backgroundImage="https://opton.net.pl/wp-content/uploads/2020/09/pexels-pixabay-356036-scaled.jpg"
+
           contactButton
         />
         <BasicSection>
@@ -52,6 +54,7 @@ class Photovoltaics extends Component {
             </div>
           </div>
         </BasicSection>
+        <Benefits />
         <BasicSection>
           <Services />
         </BasicSection>
