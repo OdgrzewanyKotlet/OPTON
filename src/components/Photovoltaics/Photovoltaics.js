@@ -7,6 +7,7 @@ import Button from "../UI/Button/Button";
 import Benefits from "./Benefits/Benefits";
 import Services from "./Services/Services";
 import FAQ from "./FAQ/FAQ";
+import Managment from "./Managment/Managment";
 
 class Photovoltaics extends Component {
   contactButtonClickedHandler = () => {
@@ -20,7 +21,6 @@ class Photovoltaics extends Component {
           title="Fotowoltaika dla Twojego domu i biznesu"
           content="Postaw na odnawialne źródła energii wykorzystując nowoczesne rozwiązania z zakresu technologii fotowoltaicznych i obniż swój rachunek za prąd."
           backgroundImage="https://opton.net.pl/wp-content/uploads/2020/09/pexels-pixabay-356036-scaled.jpg"
-
           contactButton
         />
         <BasicSection>
@@ -56,6 +56,7 @@ class Photovoltaics extends Component {
           </div>
         </BasicSection>
         <Benefits />
+        <Managment />
         <BasicSection customClass={styles.FAQ}>
           <h2>FAQ</h2>
           Najczęściej zadawane pytania

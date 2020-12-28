@@ -1,0 +1,32 @@
+.ArrowElement {
+  height: 60px;
+  width: 800px;
+  display: flex;
+  margin-top: 10%;
+  margin-left: 60%;
+  margin-right: 60%;
+  margin-bottom: 10%;
+}
+
+.ArrowSection {
+  width: 5%;
+  height: 100%;
+  padding-top: 20px;
+  padding-right: 0%;
+  padding-left: 0%;
+}
+
+.TextSection {
+  width: 50%;
+  height: 100%;
+}
+
+.TextSection p {
+  color: grey;
+  font-size: 17px;
+}
+
+.ArrowImage {
+  height: 30px;
+  width: 30px;
+}

@@ -1,0 +1,38 @@
+.Managment {
+  width: 100%;
+  height: 800px;
+}
+
+.Title {
+  text-align: center;
+  font-size: 50px;
+}
+
+.Content {
+  text-align: center;
+  text-justify: auto;
+  font-size: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  color: grey;
+}
+
+.Wrapper {
+  display: flex;
+}
+
+.ListSection {
+  width: 50%;
+  height: 100%;
+}
+
+.ImageSection {
+  width: 50%;
+  height: 100%;
+  margin-top: 50px;
+  margin-left: 15%;
+}
+
+.ImageSection img {
+  height: 500px;
+}
