@@ -6,6 +6,7 @@ import BasicSection from "../BasicSection/BasicSection";
 import Button from "../UI/Button/Button";
 import Benefits from "./Benefits/Benefits";
 import Services from "./Services/Services";
+import FAQ from "./FAQ/FAQ";
 
 class Photovoltaics extends Component {
   contactButtonClickedHandler = () => {
@@ -55,6 +56,11 @@ class Photovoltaics extends Component {
           </div>
         </BasicSection>
         <Benefits />
+        <BasicSection customClass={styles.FAQ}>
+          <h2>FAQ</h2>
+          Najczęściej zadawane pytania
+          <FAQ />
+        </BasicSection>
         <BasicSection>
           <Services />
         </BasicSection>
