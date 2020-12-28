@@ -8,6 +8,7 @@ import Benefits from "./Benefits/Benefits";
 import Services from "./Services/Services";
 import FAQ from "./FAQ/FAQ";
 import Managment from "./Managment/Managment";
+import CompaniesCarousel from "./CompaniesCarousel/CompaniesCarousel";
 
 class Photovoltaics extends Component {
   contactButtonClickedHandler = () => {
@@ -57,6 +58,17 @@ class Photovoltaics extends Component {
         </BasicSection>
         <Benefits />
         <Managment />
+        <BasicSection>
+          <h2>Finansowanie</h2>
+          Zyskaj czas i pieniądze dzięki naszej ścisłej współpracy z niezależną
+          grupą specjalistów MEAConsulting. Dla pełnej satysfakcji klienta
+          usługi związane z dofinansowaniami, kredytami i leasingami powierzamy
+          profesjonalistom, którzy na bieżąco śledzą i analizują formy
+          finansowania naszych instalacji. Dzięki takiej formie kooperacji
+          jesteśmy w stanie działać szybciej i efektywniej, co przekłada się na
+          zadowolenie wśród odbiorców.
+          <CompaniesCarousel />
+        </BasicSection>
         <BasicSection customClass={styles.FAQ}>
           <h2>FAQ</h2>
           Najczęściej zadawane pytania
