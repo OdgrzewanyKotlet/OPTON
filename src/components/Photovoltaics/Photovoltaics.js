@@ -7,6 +7,7 @@ import Button from "../UI/Button/Button";
 import Benefits from "./Benefits/Benefits";
 import Services from "./Services/Services";
 import FAQ from "./FAQ/FAQ";
+import CompaniesCarousel from "./CompaniesCarousel/CompaniesCarousel";
 
 class Photovoltaics extends Component {
   contactButtonClickedHandler = () => {
@@ -20,7 +21,6 @@ class Photovoltaics extends Component {
           title="Fotowoltaika dla Twojego domu i biznesu"
           content="Postaw na odnawialne źródła energii wykorzystując nowoczesne rozwiązania z zakresu technologii fotowoltaicznych i obniż swój rachunek za prąd."
           backgroundImage="https://opton.net.pl/wp-content/uploads/2020/09/pexels-pixabay-356036-scaled.jpg"
-
           contactButton
         />
         <BasicSection>
@@ -56,6 +56,17 @@ class Photovoltaics extends Component {
           </div>
         </BasicSection>
         <Benefits />
+        <BasicSection>
+          <h2>Finansowanie</h2>
+          Zyskaj czas i pieniądze dzięki naszej ścisłej współpracy z niezależną
+          grupą specjalistów MEAConsulting. Dla pełnej satysfakcji klienta
+          usługi związane z dofinansowaniami, kredytami i leasingami powierzamy
+          profesjonalistom, którzy na bieżąco śledzą i analizują formy
+          finansowania naszych instalacji. Dzięki takiej formie kooperacji
+          jesteśmy w stanie działać szybciej i efektywniej, co przekłada się na
+          zadowolenie wśród odbiorców.
+          <CompaniesCarousel />
+        </BasicSection>
         <BasicSection customClass={styles.FAQ}>
           <h2>FAQ</h2>
           Najczęściej zadawane pytania
