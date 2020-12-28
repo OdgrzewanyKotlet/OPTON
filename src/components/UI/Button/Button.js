@@ -2,7 +2,10 @@ import React from "react";
 import styles from "./Button.module.css";
 
 const button = (props) => (
-  <button className={styles.Button} onClick={props.clicked}>
+  <button
+    className={styles.Button + " " + props.customClass}
+    onClick={props.clicked}
+  >
     {props.children}
   </button>
 );

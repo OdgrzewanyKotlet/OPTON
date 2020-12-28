@@ -19,10 +19,7 @@ class Photovoltaics extends Component {
           backgroundImage="https://electrotile.com/wp-content/uploads/2019/06/statystyki-fotowoltaika.jpg"
           contactButton
         />
-        <BasicSection
-          bgImg="https://opton.net.pl/wp-content/uploads/2020/09/pexels-kourosh-qaffari-1583582-scaled.jpg"
-          sectionHeight="300px"
-        >
+        <BasicSection>
           <h2>Dołącz do grona naszych klientów!</h2>
           <Button clicked={this.buttonClickedHandler}>
             SKONTAKTUJ SIĘ Z NAMI
