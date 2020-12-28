@@ -4,22 +4,28 @@
 }
 
 .Title {
-  text-align: center;
+  padding: 0 0 0 5%;
+  text-align: left;
   font-weight: bold;
   font-size: large;
+  font-size: 400%;
+  color: #fff;
+  width: 65%;
 }
 
 .Content {
-  text-align: center;
+  padding: 0 0 0 5%;
+  text-align: left;
   font-weight: normal;
   font-size: normal;
 }
 
 .Button {
   background-color: transparent;
-  border: red;
-  color: red;
-  outline: red;
+  border-width: 1px;
+  border: solid white;
+  color: white;
+  outline: white;
   cursor: pointer;
   font: inherit;
   padding: 10px;

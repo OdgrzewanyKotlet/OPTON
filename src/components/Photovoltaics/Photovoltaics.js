@@ -15,8 +15,8 @@ class Photovoltaics extends Component {
     return (
       <React.Fragment>
         <FirstSection
-          title="Test optona"
-          content="no witam fajnie jest"
+          title="Fotowoltaika dla Twojego domu i biznesu"
+          content="Postaw na odnawialne źródła energii wykorzystując nowoczesne rozwiązania z zakresu technologii fotowoltaicznych i obniż swój rachunek za prąd."
           backgroundImage="https://electrotile.com/wp-content/uploads/2019/06/statystyki-fotowoltaika.jpg"
           contactButton
         />
@@ -53,7 +53,7 @@ class Photovoltaics extends Component {
           </div>
         </BasicSection>
         <BasicSection>
-                <Services />
+          <Services />
         </BasicSection>
         <BasicSection customClass={styles.Contact}>
           <h2>Dołącz do grona naszych klientów!</h2>
