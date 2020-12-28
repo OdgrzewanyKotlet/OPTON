@@ -4,6 +4,7 @@ import styles from "./Photovoltaics.module.css";
 import FirstSection from "../FirstSection/FirstSection";
 import BasicSection from "../BasicSection/BasicSection";
 import Button from "../UI/Button/Button";
+import Benefits from "./Benefits/Benefits";
 
 class Photovoltaics extends Component {
   buttonClickedHandler = () => {
@@ -51,6 +52,7 @@ class Photovoltaics extends Component {
             </div>
           </div>
         </BasicSection>
+        <Benefits />
         <BasicSection>
           <h2>Dołącz do grona naszych klientów!</h2>
           <Button clicked={this.buttonClickedHandler}>

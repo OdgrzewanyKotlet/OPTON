@@ -1,0 +1,13 @@
+.Benefits {
+  text-align: center;
+  width: 100%;
+  height: 800px;
+  background-image: url("../../../assets/images/benefits-bg.jpg");
+  background-size: cover;
+}
+
+.Title {
+  margin-top: 50px;
+  font-size: 60px;
+  padding-top: 150px;
+}
