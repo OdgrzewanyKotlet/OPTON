@@ -1,0 +1,17 @@
+.Contact {
+  background-position-y: 20%;
+  background-image: url("../../assets/images/alarms-contact.jpg");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  background-size: cover;
+  height: 250px;
+  color: white;
+}
+
+.GainConfidence {
+  padding: 50px 5% 70px 5%;
+}
+
+.GainConfidence h2 {
+  font-size: 70px;
+}
