@@ -5,6 +5,7 @@ import FirstSection from "../FirstSection/FirstSection";
 import BasicSection from "../BasicSection/BasicSection";
 import Button from "../UI/Button/Button";
 import Thieves from "./Thieves/Thieves";
+import GainConfidence from "./GainConfidence/GainConfidence";
 
 class Alarms extends Component {
   contactButtonClickedHandler = () => {
@@ -21,6 +22,10 @@ class Alarms extends Component {
         />
         <BasicSection>
           <Thieves />
+        </BasicSection>
+        <BasicSection customClass={styles.GainConfidence}>
+          <h2>Zyskaj pewność</h2>
+          <GainConfidence />
         </BasicSection>
 
         <BasicSection customClass={styles.Contact}>
