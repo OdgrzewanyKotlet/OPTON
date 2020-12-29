@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
 .NavigationItem {
   margin: 10px 0;
@@ -41,13 +41,19 @@
     color: #7a7a7a;
     height: 100%;
     padding: 15px 15px;
-    border-bottom: 4px solid transparent;
+
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    transition: background-size 0.3s;
   }
 
   .NavigationItem a:hover,
   .NavigationItem a:active,
   .NavigationItem a.active {
-    border-bottom: 4px solid #314089;
+    background-size: 100% 3px;
     color: #314089;
   }
 }
