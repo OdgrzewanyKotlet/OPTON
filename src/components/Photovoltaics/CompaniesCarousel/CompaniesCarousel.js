@@ -7,42 +7,42 @@ import styles from "./CompaniesCarousel.module.css";
 
 const companiesCarousel = (props) => (
   <div className={styles.CompaniesCarousel}>
-    <div class={styles.slider}>
-      <div class={styles.slideTrack}>
-        <div class={styles.slide}>
+    <div className={styles.slider}>
+      <div className={styles.slideTrack}>
+        <div className={styles.slide}>
           <img src={Comp1} width="300" height="auto" alt="" />
         </div>
-        <div class={styles.slide}>
+        <div className={styles.slide}>
           <img src={Comp2} width="300" height="auto" alt="" />
         </div>
-        <div class={styles.slide}>
+        <div className={styles.slide}>
           <img src={Comp3} width="300" height="auto" alt="" />
         </div>
-        <div class={styles.slide}>
+        <div className={styles.slide}>
           <img src={Comp4} width="300" height="auto" alt="" />
         </div>
-        <div class={styles.slide}>
+        <div className={styles.slide}>
           <img src={Comp1} width="300" height="auto" alt="" />
         </div>
-        <div class={styles.slide}>
+        <div className={styles.slide}>
           <img src={Comp2} width="300" height="auto" alt="" />
         </div>
-        <div class={styles.slide}>
+        <div className={styles.slide}>
           <img src={Comp3} width="300" height="auto" alt="" />
         </div>
-        <div class={styles.slide}>
+        <div className={styles.slide}>
           <img src={Comp4} width="300" height="auto" alt="" />
         </div>
-        <div class={styles.slide}>
+        <div className={styles.slide}>
           <img src={Comp1} width="300" height="auto" alt="" />
         </div>
-        <div class={styles.slide}>
+        <div className={styles.slide}>
           <img src={Comp2} width="300" height="auto" alt="" />
         </div>
-        <div class={styles.slide}>
+        <div className={styles.slide}>
           <img src={Comp3} width="300" height="auto" alt="" />
         </div>
-        <div class={styles.slide}>
+        <div className={styles.slide}>
           <img src={Comp4} width="300" height="auto" alt="" />
         </div>
       </div>

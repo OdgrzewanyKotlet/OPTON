@@ -1,0 +1,22 @@
+.Contact {
+  background-position-y: 50%;
+  background-image: url("../../assets/images/electricity-contact.jpg");
+  background-size: cover;
+  height: 250px;
+  color: white;
+}
+
+.Aesthetics {
+  padding: 100px 32%;
+}
+
+.Smart {
+  text-align: left;
+  background-position-y: 10%;
+  background-image: url("../../assets/images/electricity-smart.jpg");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  color: white;
+  padding: 200px 20%;
+}
