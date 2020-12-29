@@ -8,7 +8,8 @@ import Experience from "./Experience/Experience";
 const Electricity = () => (
   <React.Fragment>
     <FirstSection
-      title="Nowoczesna instalacja elektryczna"
+      title="Nowoczesna
+       instalacja elektryczna"
       content="Prawidłowo zrealizowana instalacja elektryczna to nie tylko bezawaryjne działanie przez długi okres czasu, ale również oszczędność i bezpieczeństwo."
       backgroundImage={FirstSectionBg}
     />
