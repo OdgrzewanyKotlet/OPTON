@@ -9,6 +9,7 @@ import Services from "./Services/Services";
 import FAQ from "./FAQ/FAQ";
 import Managment from "./Managment/Managment";
 import CompaniesCarousel from "./CompaniesCarousel/CompaniesCarousel";
+import MeaConsulting from "./MeaConsulting/MeaConsulting";
 
 class Photovoltaics extends Component {
   contactButtonClickedHandler = () => {
@@ -58,6 +59,7 @@ class Photovoltaics extends Component {
         </BasicSection>
         <Benefits />
         <Managment />
+        <MeaConsulting />
         <BasicSection>
           <h2>Finansowanie</h2>
           Zyskaj czas i pieniądze dzięki naszej ścisłej współpracy z niezależną

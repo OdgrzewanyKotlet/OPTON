@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import styles from "./Electricity.module.css";
 import FirstSection from "../FirstSection/FirstSection";
+import FirstSectionBg from "../../assets/images/electricity-first-section-bg.jpg";
 import BasicSection from "../BasicSection/BasicSection";
 import Button from "../UI/Button/Button";
 
