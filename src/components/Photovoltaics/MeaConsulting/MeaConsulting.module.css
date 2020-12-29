@@ -2,9 +2,22 @@
   background-image: url("../../../assets/images/mea-bg.jpg");
   width: 100%;
   height: 200px;
+  position: relative;
 }
 
 .MeaLogo {
-  padding-top: 25px;
-  height: 150px;
+  width: 400px;
+  height: auto;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: width 0.5s;
+}
+
+.MeaLogo:hover {
+  width: 450px;
+  height: auto;
 }

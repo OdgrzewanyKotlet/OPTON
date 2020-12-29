@@ -15,3 +15,51 @@
 .GainConfidence h2 {
   font-size: 70px;
 }
+
+.Care .Wrapper {
+  display: flex;
+}
+
+.Care .Wrapper .CareTitle {
+  width: 20%;
+  text-align: left;
+  text-justify: auto;
+  padding-right: 15%;
+  margin-left: 20%;
+  margin-top: 11%;
+  margin-bottom: 10%;
+}
+
+.Care .Wrapper .CareTitle h2 {
+  padding-top: 30%;
+  margin-bottom: 15px;
+}
+
+.Care .Wrapper .CareContent {
+  width: 30%;
+  text-justify: auto;
+  text-align: left;
+  margin-right: 15%;
+  margin-top: 4%;
+  margin-bottom: 80px;
+  color: grey;
+  line-height: 200%;
+}
+
+.Care .Wrapper .CareContent h4 {
+  color: black;
+  font-size: 28px;
+  margin-bottom: 0;
+}
+
+.Secure {
+  text-align: left;
+  background-image: url("../../assets/images/alarms-secure.jpg");
+  background-attachment: fixed;
+  color: black;
+  padding: 200px 60% 200px 20%;
+}
+
+.Secure h3 {
+  font-size: 30px;
+}
