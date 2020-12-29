@@ -4,7 +4,7 @@ import styles from "./Alarms.module.css";
 import FirstSection from "../FirstSection/FirstSection";
 import FirstSectionBg from "../../assets/images/alarms-first-section-bg.jpg";
 import Infos from "./Infos/Infos";
-
+import CounterSection from "./CounterSection/CounterSection";
 import BasicSection from "../BasicSection/BasicSection";
 import Button from "../UI/Button/Button";
 import Thieves from "./Thieves/Thieves";
@@ -23,6 +23,9 @@ class Alarms extends Component {
           backgroundImage={FirstSectionBg}
         />
         <Infos />
+
+        <CounterSection />
+
         <BasicSection customClass={styles.Secure}>
           <h3>Zabezpiecz swoją rodzinę na przyszłość</h3>
         </BasicSection>
@@ -56,6 +59,7 @@ class Alarms extends Component {
             </div>
           </div>
         </BasicSection>
+
         <BasicSection>
           <Thieves />
         </BasicSection>
