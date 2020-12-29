@@ -10,10 +10,19 @@ import FAQ from "./FAQ/FAQ";
 import Managment from "./Managment/Managment";
 import CompaniesCarousel from "./CompaniesCarousel/CompaniesCarousel";
 import MeaConsulting from "./MeaConsulting/MeaConsulting";
+import Calculator from "./Calculator/Calculator";
 
 class Photovoltaics extends Component {
+  state = {
+    sliderValue: null,
+  };
+
   contactButtonClickedHandler = () => {
     this.props.history.push({ pathname: "/kontakt" });
+  };
+
+  getSliderValue = (e, value) => {
+    this.setState({ sliderValue: value });
   };
 
   render() {
@@ -58,6 +67,11 @@ class Photovoltaics extends Component {
           </div>
         </BasicSection>
         <Benefits />
+        <BasicSection customClass={styles.Calculator}>
+          <h2>Kalkulacja oszczędności</h2>
+          <Calculator getValue={this.getSliderValue} />
+          TEST| {this.state.sliderValue} |TEST
+        </BasicSection>
         <Managment />
         <MeaConsulting />
         <BasicSection>
