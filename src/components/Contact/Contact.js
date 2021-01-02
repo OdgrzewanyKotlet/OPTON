@@ -6,7 +6,9 @@ import styles from "./Contact.module.css";
 class Contact extends Component {
   render() {
     return (
-      <BasicSection className={styles.Form}>
+      <BasicSection customClass={styles.Form}>
+        <h1>Formularz kontaktowy</h1>
+        DAJ ZNAĆ CZEGO POTRZEBUJESZ!
         <Form />
       </BasicSection>
     );

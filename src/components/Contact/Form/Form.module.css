@@ -1,11 +1,12 @@
 .Form {
-  margin: auto;
+  margin: 20px auto;
   width: 60%;
 }
 
-.InputField {
-  margin-bottom: 30px;
+.Form .InputField {
   width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 .Button {

@@ -11,20 +11,23 @@ import styles from "./Form.module.css";
 class Form extends Component {
   state = {
     topic: "electricity",
-    age: 0,
+    name: "",
+    surname: "",
+    email: "",
+    telephone: "",
+    content: "",
   };
 
   formSendHandler = () => {};
-  topicSelectChangedHandler = (event) => {
+
+  inputChangedHandler = (event, id) => {
     const newState = {
       ...this.state,
     };
 
-    newState.topic = event.target.value;
+    newState[id] = event.target.value;
 
-    this.setState({ topic: newState.topic });
-    console.log(event.target.value);
-    console.log(this.state.topic);
+    this.setState(newState);
   };
 
   render() {
@@ -36,12 +39,12 @@ class Form extends Component {
         onSubmit={this.formSendHandler}
       >
         <FormControl required variant="filled" className={styles.InputField}>
-          <InputLabel id="topic-select-label">Temat wiadomości</InputLabel>
+          <InputLabel id="topic-label">Temat wiadomości</InputLabel>
           <Select
-            labelId="topic-select-label"
-            id="topic-select"
+            labelId="topic-label"
+            id="topic"
             value={this.state.topic}
-            onChange={this.topicSelectChangedHandler}
+            onChange={(event) => this.inputChangedHandler(event, "topic")}
           >
             <MenuItem value="electricity">Instalacje elektryczne</MenuItem>
             <MenuItem value="photovoltaics">Fotowoltaika</MenuItem>
@@ -56,26 +59,30 @@ class Form extends Component {
           id="name"
           label="Imię"
           variant="filled"
+          onChange={(event) => this.inputChangedHandler(event, "name")}
         />
         <TextField
           required
           className={styles.InputField}
-          id="name"
+          id="surname"
           label="Nazwisko"
           variant="filled"
+          onChange={(event) => this.inputChangedHandler(event, "surname")}
         />
         <TextField
           required
           className={styles.InputField}
-          id="name"
+          id="email"
           label="E-mail"
           variant="filled"
+          onChange={(event) => this.inputChangedHandler(event, "email")}
         />
         <TextField
           className={styles.InputField}
-          id="name"
+          id="telephone"
           label="Numer kontaktowy"
           variant="filled"
+          onChange={(event) => this.inputChangedHandler(event, "telephone")}
         />
         <TextField
           required
@@ -85,6 +92,7 @@ class Form extends Component {
           placeholder=""
           multiline
           variant="outlined"
+          onChange={(event) => this.inputChangedHandler(event, "content")}
         />
         <Button customClass={styles.Button}>WYŚLIJ</Button>
       </form>
