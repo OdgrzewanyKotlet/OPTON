@@ -17,10 +17,40 @@ class Form extends Component {
     email: "",
     telephone: "",
     content: "",
+    status: null,
+    topicMap: {
+      electricity: "Instalacje elektryczne",
+      photovoltaics: "Fotowoltaika",
+      alarms: "Instalacje alarmowe",
+      other: "Inne",
+    },
   };
 
-  formSendHandler = () => {
-    console.log("PRZESZŁO");
+  formSendHandler = async (event) => {
+    console.log("SENDING!");
+    event.preventDefault();
+    this.setState({ status: "Sending..." });
+
+    let details = {
+      name: this.state.name,
+      surname: this.state.surname,
+      email: this.state.email,
+      telephone: this.state.telephone,
+      content: this.state.content,
+      topic: this.state.topicMap[this.state.topic],
+    };
+
+    let response = await fetch("http://localhost:5000/contactsend", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
+    });
+
+    this.setState({ status: "Submit..." });
+    let result = await response.json();
+    alert(result.status);
   };
 
   inputChangedHandler = (event, id) => {
@@ -85,7 +115,10 @@ class Form extends Component {
           value={this.state.email}
           onChange={(event) => this.inputChangedHandler(event, "email")}
           validators={["required", "isEmail"]}
-          errorMessages={["To pole jest wymagane", "email is not valid"]}
+          errorMessages={[
+            "To pole jest wymagane",
+            "Adres email jest niepoprawny",
+          ]}
         />
 
         <TextField
