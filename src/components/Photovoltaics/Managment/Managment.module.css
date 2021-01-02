@@ -9,6 +9,7 @@
 }
 
 .Content {
+  margin-bottom: 50px;
   text-align: center;
   text-justify: auto;
   font-size: 20px;
@@ -18,28 +19,27 @@
 }
 
 .Wrapper {
+  height: 70%;
   display: flex;
 }
 
 .ListSection {
   width: 50%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .ImageSection {
   width: 50%;
-  height: 100%;
-
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
 }
 
 .ImageSection img {
-  width: 200px;
+  display: block;
+  width: 25%;
   height: auto;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
