@@ -9,3 +9,31 @@
   font-size: 60px;
   letter-spacing: 0px;
 }
+
+.Info {
+  color: black;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.BigInfo {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.SmallInfo {
+  font-size: 13px;
+  letter-spacing: 10px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.Address {
+  font-weight: lighter;
+  font-size: 22px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
