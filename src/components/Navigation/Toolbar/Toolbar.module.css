@@ -18,9 +18,16 @@
 }
 
 .Logo {
-  height: 80%;
+  height: 60%;
+  width: auto;
+  padding-left: 10px;
+  transition: height 0.3s ease-out;
 }
-
+.Logo:hover {
+  height: 70%;
+  width: auto;
+  padding-left: 10px;
+}
 @media (max-width: 499px) {
   .DesktopOnly {
     display: none;
