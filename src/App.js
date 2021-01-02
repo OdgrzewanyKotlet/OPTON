@@ -7,6 +7,7 @@ import Photovoltaics from "./components/Photovoltaics/Photovoltaics";
 import Electricity from "./components/Electricity/Electricity";
 import Alarms from "./components/Alarms/Alarms";
 import Contact from "./components/Contact/Contact";
+import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
               <Route path="/instalacje-elektryczne" component={Electricity} />
               <Route path="/instalacje-alarmowe" component={Alarms} />
               <Route path="/kontakt" component={Contact} />
+              <Route path="/polityka-prywatnosci" component={PrivacyPolicy} />
               <Route path="/" exact component={Photovoltaics} />
             </Switch>
           </ScrollToTop>
