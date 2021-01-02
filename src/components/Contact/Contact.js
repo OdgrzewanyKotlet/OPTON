@@ -1,10 +1,15 @@
 import React, { Component } from "react";
-
+import Form from "./Form/Form";
+import BasicSection from "../BasicSection/BasicSection";
 import styles from "./Contact.module.css";
 
 class Contact extends Component {
   render() {
-    return <div>Formularz tutaj będzie</div>;
+    return (
+      <BasicSection className={styles.Form}>
+        <Form />
+      </BasicSection>
+    );
   }
 }
 
