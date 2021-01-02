@@ -1,0 +1,17 @@
+.PrivacyPolicy {
+  color: gray;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: justify;
+  line-height: 200%;
+}
+
+.PrivacyPolicy h2 {
+  font-size: 45px;
+}
+
+.PrivacyPolicy p {
+  font-size: 15px;
+}

@@ -40,7 +40,9 @@ const footerItems = (props) => (
           <li>
             <NavLink to="/kontakt">Kontakt</NavLink>
           </li>
-          <li>Polityka prywatności</li>
+          <li>
+            <NavLink to="/polityka-prywatnosci">Polityka prywatności</NavLink>
+          </li>
         </ul>
       </nav>
     </FooterItem>
