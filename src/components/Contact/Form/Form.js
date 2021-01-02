@@ -7,6 +7,7 @@ import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import Button from "../../UI/Button/Button";
 import styles from "./Form.module.css";
+import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 
 class Form extends Component {
   state = {
@@ -18,7 +19,9 @@ class Form extends Component {
     content: "",
   };
 
-  formSendHandler = () => {};
+  formSendHandler = () => {
+    console.log("PRZESZŁO");
+  };
 
   inputChangedHandler = (event, id) => {
     const newState = {
@@ -32,10 +35,10 @@ class Form extends Component {
 
   render() {
     return (
-      <form
+      <ValidatorForm
         className={styles.Form}
-        noValidate
-        autoComplete="off"
+        ref="form"
+        onError={(errors) => console.log(errors)}
         onSubmit={this.formSendHandler}
       >
         <FormControl required variant="filled" className={styles.InputField}>
@@ -53,49 +56,61 @@ class Form extends Component {
           </Select>
         </FormControl>
 
-        <TextField
-          required
+        <TextValidator
           className={styles.InputField}
           id="name"
-          label="Imię"
+          label="Imię *"
           variant="filled"
+          value={this.state.name}
           onChange={(event) => this.inputChangedHandler(event, "name")}
+          validators={["required"]}
+          errorMessages={["To pole jest wymagane"]}
         />
-        <TextField
-          required
+        <TextValidator
           className={styles.InputField}
           id="surname"
-          label="Nazwisko"
+          label="Nazwisko *"
           variant="filled"
+          value={this.state.surname}
           onChange={(event) => this.inputChangedHandler(event, "surname")}
+          validators={["required"]}
+          errorMessages={["To pole jest wymagane"]}
         />
-        <TextField
-          required
+
+        <TextValidator
           className={styles.InputField}
           id="email"
-          label="E-mail"
+          label="E-mail *"
           variant="filled"
+          value={this.state.email}
           onChange={(event) => this.inputChangedHandler(event, "email")}
+          validators={["required", "isEmail"]}
+          errorMessages={["To pole jest wymagane", "email is not valid"]}
         />
+
         <TextField
           className={styles.InputField}
           id="telephone"
           label="Numer kontaktowy"
           variant="filled"
+          value={this.state.telephone}
           onChange={(event) => this.inputChangedHandler(event, "telephone")}
         />
-        <TextField
-          required
+
+        <TextValidator
           className={styles.InputField}
           id="content"
-          label="Treść wiadomości"
+          label="Treść wiadomości *"
           placeholder=""
           multiline
           variant="outlined"
+          value={this.state.content}
           onChange={(event) => this.inputChangedHandler(event, "content")}
+          validators={["required"]}
+          errorMessages={["To pole jest wymagane"]}
         />
         <Button customClass={styles.Button}>WYŚLIJ</Button>
-      </form>
+      </ValidatorForm>
     );
   }
 }
