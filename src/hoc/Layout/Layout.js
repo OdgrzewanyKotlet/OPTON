@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
+
+import CookieConsent from "react-cookie-consent";
 
 import styles from "./Layout.module.css";
 import Toolbar from "../../components/Navigation/Toolbar/Toolbar";
@@ -30,9 +33,33 @@ class Layout extends Component {
         />
         <main className={styles.Content}>{this.props.children}</main>
         <Footer />
+        <CookieConsent
+          buttonText="Zgoda"
+          buttonStyle={{
+            background: "#00cc99",
+            color: "white",
+            fontSize: "14px",
+            marginRight: "20px",
+          }}
+          enableDeclineButton
+          declineButtonText="Polityka prywatności"
+          declineButtonStyle={{
+            background: "#00cc99",
+            color: "white",
+            fontSize: "14px",
+            marginRight: "5px",
+          }}
+          onDecline={() => {
+            this.props.history.push("/polityka-prywatnosci");
+          }}
+        >
+          Ta strona korzysta z ciasteczek aby świadczyć usługi na najwyższym
+          poziomie. Dalsze korzystanie ze strony oznacza, że zgadzasz się na ich
+          użycie.
+        </CookieConsent>
       </React.Fragment>
     );
   }
 }
 
-export default Layout;
+export default withRouter(Layout);
