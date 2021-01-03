@@ -1,6 +1,8 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 
+import Zoom from "react-reveal/Zoom";
+
 import styles from "./FirstSection.module.css";
 
 const FirstSection = (props) => {
@@ -14,9 +16,11 @@ const FirstSection = (props) => {
 
   if (props.contactButton) {
     contactButton = (
-      <button onClick={contactButtonHandler} className={styles.Button}>
-        Napisz do nas
-      </button>
+      <Zoom cascade>
+        <button onClick={contactButtonHandler} className={styles.Button}>
+          Napisz do nas
+        </button>
+      </Zoom>
     );
   }
 
@@ -27,8 +31,12 @@ const FirstSection = (props) => {
       className={styles.FirstSection}
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <h2 className={styles.Title}>{props.title}</h2>
-      <p className={styles.Content}>{props.content}</p>
+      <Zoom cascade>
+        <div>
+          <h2 className={styles.Title}>{props.title}</h2>
+          <p className={styles.Content}>{props.content}</p>
+        </div>
+      </Zoom>
       {contactButton}
     </div>
   );
