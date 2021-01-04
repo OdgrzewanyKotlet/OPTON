@@ -5,6 +5,7 @@ const nodemailer = require("nodemailer");
 const path = require("path");
 require("dotenv").config({ path: path.resolve(__dirname, "../.env") });
 
+const targetAddress = process.env.TARGET_EMAIL_ADDRESS;
 const address = process.env.EMAIL_ADDRESS;
 const pass = process.env.EMAIL_PASSWORD;
 
@@ -44,7 +45,7 @@ router.post("/contactsend", (req, res) => {
 
   const mail = {
     from: name + " " + surname,
-    to: address,
+    to: targetAddress,
     subject: `Zapytanie: ${topic} - ${name} ${surname}`,
     html: `<p>Imię i nazwisko: ${name} ${surname}</p>
              <p>Email: ${email}</p>

@@ -13,3 +13,14 @@
   background-color: #4254bd;
   color: white;
 }
+
+.Button:disabled {
+  background-color: grey;
+  color: black;
+  cursor: not-allowed;
+}
+
+.ReCaptcha {
+  width: 20%;
+  margin: 20px 37% 20px;
+}
