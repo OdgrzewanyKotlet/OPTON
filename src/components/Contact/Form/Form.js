@@ -54,10 +54,11 @@ class Form extends Component {
 
       let result = await response.json();
       if (result.status === "OK") {
-      this.setState({ send: true, loading: false });
+        this.setState({ send: true, loading: false });
       }
     } else {
       alert("CAPTCHA FAILED!");
+    }
   };
 
   inputChangedHandler = (event, id) => {
@@ -75,7 +76,6 @@ class Form extends Component {
   };
 
   render() {
-    
     let captcha = (
       <div className={styles.ReCaptcha}>
         <ReCAPTCHA
@@ -180,8 +180,10 @@ class Form extends Component {
           >
             WYŚLIJ
           </Button>
+        </ValidatorForm>
+      </React.Fragment>
     );
-    
+
     if (this.state.send) {
       form = (
         <Fade top duration={8000}>
@@ -195,7 +197,7 @@ class Form extends Component {
         </Fade>
       );
     }
-    
+
     if (this.state.loading) {
       form = (
         <Fade duration={3000}>
