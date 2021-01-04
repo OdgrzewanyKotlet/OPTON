@@ -86,10 +86,6 @@ class Form extends Component {
       </div>
     );
 
-    if (this.state.captchaVerified) {
-      captcha = null;
-    }
-
     let form = (
       <React.Fragment>
         <center>
@@ -174,12 +170,14 @@ class Form extends Component {
             errorMessages={["To pole jest wymagane"]}
           />
           {captcha}
-          <Button
-            customClass={styles.Button}
-            disabled={!this.state.captchaVerified}
-          >
-            WYŚLIJ
-          </Button>
+          <center>
+            <Button
+              customClass={styles.Button}
+              disabled={!this.state.captchaVerified}
+            >
+              WYŚLIJ
+            </Button>
+          </center>
         </ValidatorForm>
       </React.Fragment>
     );
