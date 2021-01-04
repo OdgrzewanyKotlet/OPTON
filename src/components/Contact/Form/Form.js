@@ -6,6 +6,8 @@ import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import Button from "../../UI/Button/Button";
 import styles from "./Form.module.css";
+import Loader from "react-loader-spinner";
+import Fade from "react-reveal/Fade";
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 import ReCAPTCHA from "react-google-recaptcha";
 
@@ -17,21 +19,21 @@ class Form extends Component {
     email: "",
     telephone: "",
     content: "",
-    status: null,
     topicMap: {
       electricity: "Instalacje elektryczne",
       photovoltaics: "Fotowoltaika",
       alarms: "Instalacje alarmowe",
       other: "Inne",
     },
+    loading: false,
+    send: false,
     captchaVerified: false,
   };
 
   formSendHandler = async (event) => {
     if (this.state.captchaVerified) {
-      console.log("SENDING!");
+      this.setState({ loading: true });
       event.preventDefault();
-      this.setState({ status: "Sending..." });
 
       let details = {
         name: this.state.name,
@@ -50,12 +52,12 @@ class Form extends Component {
         body: JSON.stringify(details),
       });
 
-      this.setState({ status: "Submit..." });
       let result = await response.json();
-      alert(result.status);
+      if (result.status === "OK") {
+      this.setState({ send: true, loading: false });
+      }
     } else {
       alert("CAPTCHA FAILED!");
-    }
   };
 
   inputChangedHandler = (event, id) => {
@@ -73,6 +75,7 @@ class Form extends Component {
   };
 
   render() {
+    
     let captcha = (
       <div className={styles.ReCaptcha}>
         <ReCAPTCHA
@@ -87,8 +90,12 @@ class Form extends Component {
       captcha = null;
     }
 
-    return (
+    let form = (
       <React.Fragment>
+        <center>
+          <h1 className={styles.Title}>Formularz kontaktowy</h1>
+          <p className={styles.Content}>DAJ ZNAĆ CZEGO POTRZEBUJESZ!</p>
+        </center>
         <ValidatorForm
           className={styles.Form}
           ref="form"
@@ -173,9 +180,32 @@ class Form extends Component {
           >
             WYŚLIJ
           </Button>
-        </ValidatorForm>
-      </React.Fragment>
     );
+    
+    if (this.state.send) {
+      form = (
+        <Fade top duration={8000}>
+          <div className={styles.SuccessInfo}>
+            <center>
+              <h2>Dziękujemy za wiadomość!</h2>
+              <p>Odezwiemy się niebawem</p>
+              <hr />
+            </center>
+          </div>
+        </Fade>
+      );
+    }
+    
+    if (this.state.loading) {
+      form = (
+        <Fade duration={3000}>
+          <center>
+            <Loader type="ThreeDots" color="#314089" height={150} width={150} />
+          </center>
+        </Fade>
+      );
+    }
+    return <React.Fragment>{form}</React.Fragment>;
   }
 }
 

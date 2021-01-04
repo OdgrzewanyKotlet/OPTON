@@ -4,6 +4,7 @@ const cors = require("cors");
 const nodemailer = require("nodemailer");
 const path = require("path");
 require("dotenv").config({ path: path.resolve(__dirname, "../.env") });
+process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
 
 const targetAddress = process.env.TARGET_EMAIL_ADDRESS;
 const address = process.env.EMAIL_ADDRESS;
@@ -55,9 +56,9 @@ router.post("/contactsend", (req, res) => {
 
   contactEmail.sendMail(mail, (error) => {
     if (error) {
-      res.json({ status: "BŁĄD" });
+      res.json({ status: "ERROR" });
     } else {
-      res.json({ status: "Wiadomość wysłana!" });
+      res.json({ status: "OK" });
     }
   });
 });
