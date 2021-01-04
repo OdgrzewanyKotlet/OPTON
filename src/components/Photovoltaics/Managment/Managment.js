@@ -1,7 +1,6 @@
 import React from "react";
 
 import Fade from "react-reveal/Fade";
-import Zoom from "react-reveal/Zoom";
 
 import styles from "./Managment.module.css";
 import PhoneImage from "../../../assets/images/managment-phone.jpg";
@@ -9,7 +8,7 @@ import ArrowElement from "./ArrowElement/ArrowElement";
 
 const managment = (props) => (
   <div className={styles.Managment}>
-    <Zoom cascade>
+    <Fade cascade>
       <h2 className={styles.Title}>Zarządzaj z dowolnego miejsca</h2>
       <p className={styles.Content}>
         Monitoring to nie tylko sprawdzanie uzysków, ale również środek na
@@ -18,7 +17,7 @@ const managment = (props) => (
         o pracy Twojej instalacji. Takie rozwiązania pomagają nam szybciej
         zlokalizować ewentualną usterkę oraz rozwiązać problem.​
       </p>
-    </Zoom>
+    </Fade>
     <div className={styles.Wrapper}>
       <div className={styles.ListSection}>
         <ArrowElement
