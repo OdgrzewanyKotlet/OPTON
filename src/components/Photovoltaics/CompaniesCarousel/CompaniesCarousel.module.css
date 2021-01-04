@@ -29,7 +29,7 @@
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 960px;
+  width: 100%;
 }
 .slider::before,
 .slider::after {
@@ -60,4 +60,6 @@
   width: 350px;
   margin-left: 20px;
   margin-right: 20px;
+}
+@media (min-width: 749px) {
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 
-import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 
 import styles from "./FirstSection.module.css";
 
@@ -16,11 +16,11 @@ const FirstSection = (props) => {
 
   if (props.contactButton) {
     contactButton = (
-      <Zoom cascade>
+      <Fade>
         <button onClick={contactButtonHandler} className={styles.Button}>
           Napisz do nas
         </button>
-      </Zoom>
+      </Fade>
     );
   }
 
@@ -31,12 +31,12 @@ const FirstSection = (props) => {
       className={styles.FirstSection}
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <Zoom cascade>
+      <Fade cascade duration={3000}>
         <div>
           <h2 className={styles.Title}>{props.title}</h2>
           <p className={styles.Content}>{props.content}</p>
         </div>
-      </Zoom>
+      </Fade>
       {contactButton}
     </div>
   );

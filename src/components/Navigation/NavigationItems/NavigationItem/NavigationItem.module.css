@@ -20,7 +20,7 @@
   color: #314089;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 749px) {
   .NavigationItem {
     text-transform: uppercase;
     font-family: "Roboto", sans-serif;

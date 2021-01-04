@@ -22,7 +22,7 @@ ValueLabelComponent.propTypes = {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: 700,
+    width: 500,
     margin: "auto",
   },
 }));
