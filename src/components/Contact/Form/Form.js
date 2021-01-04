@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-//import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -10,6 +9,7 @@ import styles from "./Form.module.css";
 import Loader from "react-loader-spinner";
 import Fade from "react-reveal/Fade";
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
+import ReCAPTCHA from "react-google-recaptcha";
 
 class Form extends Component {
   state = {
@@ -27,33 +27,37 @@ class Form extends Component {
     },
     loading: false,
     send: false,
+    captchaVerified: false,
   };
 
   formSendHandler = async (event) => {
-    this.setState({ loading: true });
-    event.preventDefault();
+    if (this.state.captchaVerified) {
+      this.setState({ loading: true });
+      event.preventDefault();
 
-    let details = {
-      name: this.state.name,
-      surname: this.state.surname,
-      email: this.state.email,
-      telephone: this.state.telephone,
-      content: this.state.content,
-      topic: this.state.topicMap[this.state.topic],
-    };
+      let details = {
+        name: this.state.name,
+        surname: this.state.surname,
+        email: this.state.email,
+        telephone: this.state.telephone,
+        content: this.state.content,
+        topic: this.state.topicMap[this.state.topic],
+      };
 
-    let response = await fetch("http://localhost:5000/contactsend", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
+      let response = await fetch("http://localhost:5000/contactsend", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+        },
+        body: JSON.stringify(details),
+      });
 
-    let result = await response.json();
-    if (result.status === "OK") {
+      let result = await response.json();
+      if (result.status === "OK") {
       this.setState({ send: true, loading: false });
-    }
+      }
+    } else {
+      alert("CAPTCHA FAILED!");
   };
 
   inputChangedHandler = (event, id) => {
@@ -66,7 +70,26 @@ class Form extends Component {
     this.setState(newState);
   };
 
+  captchaVerificationHandler = () => {
+    this.setState({ captchaVerified: true });
+  };
+
   render() {
+    
+    let captcha = (
+      <div className={styles.ReCaptcha}>
+        <ReCAPTCHA
+          sitekey="6Lc_gyAaAAAAABLZozWuoypaTpS2g0CCeAIe7cMn"
+          onChange={this.captchaVerificationHandler}
+          hl="pl"
+        />
+      </div>
+    );
+
+    if (this.state.captchaVerified) {
+      captcha = null;
+    }
+
     let form = (
       <React.Fragment>
         <center>
@@ -150,10 +173,15 @@ class Form extends Component {
             validators={["required"]}
             errorMessages={["To pole jest wymagane"]}
           />
-          <Button customClass={styles.Button}>WYŚLIJ</Button>
-        </ValidatorForm>
-      </React.Fragment>
+          {captcha}
+          <Button
+            customClass={styles.Button}
+            disabled={!this.state.captchaVerified}
+          >
+            WYŚLIJ
+          </Button>
     );
+    
     if (this.state.send) {
       form = (
         <Fade top duration={8000}>
@@ -167,6 +195,7 @@ class Form extends Component {
         </Fade>
       );
     }
+    
     if (this.state.loading) {
       form = (
         <Fade duration={3000}>
