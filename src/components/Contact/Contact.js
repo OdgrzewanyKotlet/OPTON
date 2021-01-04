@@ -7,11 +7,7 @@ class Contact extends Component {
   render() {
     return (
       <React.Fragment>
-        <BasicSection customClass={styles.Form}>
-          <h1>Formularz kontaktowy</h1>
-          DAJ ZNAĆ CZEGO POTRZEBUJESZ!
-          <Form />
-        </BasicSection>
+        <Form />
         <BasicSection customClass={styles.Info}>
           <center>
             <p className={styles.SmallInfo}>TELEFON</p>
