@@ -7,7 +7,10 @@
   height: 250px;
   color: white;
 }
-
+.UnderLine {
+  border: solid #00ce1b 1px;
+  width: 20%;
+}
 .GainConfidence {
   padding: 50px 5% 70px 5%;
 }
@@ -62,4 +65,48 @@
 
 .Secure h3 {
   font-size: 30px;
+}
+@media (max-width: 749px) {
+  .Care {
+    padding-bottom: 20px;
+  }
+  .CareTitle .UnderLine {
+    margin: auto;
+  }
+  .Care .Wrapper {
+    display: block;
+  }
+
+  .Care .Wrapper .CareTitle {
+    width: 80%;
+
+    text-align: center;
+    text-justify: auto;
+    padding: 0px;
+    margin: auto;
+  }
+
+  .Care .Wrapper .CareTitle h2 {
+    font-size: 60px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .Care .Wrapper .CareContent {
+    width: 100%;
+    text-justify: auto;
+    text-align: center;
+    margin: auto;
+    color: grey;
+    line-height: 200%;
+  }
+
+  .Care .Wrapper .CareContent h4 {
+    color: black;
+    font-size: 28px;
+    margin-bottom: 0;
+  }
+  .Secure {
+    background-position-x: -500px;
+  }
 }
