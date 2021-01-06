@@ -6,7 +6,7 @@
 }
 
 .MeaLogo {
-  width: 400px;
+  width: 30%;
   height: auto;
   position: absolute;
   margin: auto;
@@ -18,6 +18,6 @@
 }
 
 .MeaLogo:hover {
-  width: 450px;
+  width: 35%;
   height: auto;
 }

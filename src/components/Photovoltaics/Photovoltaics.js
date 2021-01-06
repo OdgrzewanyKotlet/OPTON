@@ -84,13 +84,15 @@ class Photovoltaics extends Component {
         <MeaConsulting />
         <BasicSection>
           <h2>Finansowanie</h2>
-          Zyskaj czas i pieniądze dzięki naszej ścisłej współpracy z niezależną
-          grupą specjalistów MEAConsulting. Dla pełnej satysfakcji klienta
-          usługi związane z dofinansowaniami, kredytami i leasingami powierzamy
-          profesjonalistom, którzy na bieżąco śledzą i analizują formy
-          finansowania naszych instalacji. Dzięki takiej formie kooperacji
-          jesteśmy w stanie działać szybciej i efektywniej, co przekłada się na
-          zadowolenie wśród odbiorców.
+          <div className={styles.FinanceText}>
+            Zyskaj czas i pieniądze dzięki naszej ścisłej współpracy z
+            niezależną grupą specjalistów MEAConsulting. Dla pełnej satysfakcji
+            klienta usługi związane z dofinansowaniami, kredytami i leasingami
+            powierzamy profesjonalistom, którzy na bieżąco śledzą i analizują
+            formy finansowania naszych instalacji. Dzięki takiej formie
+            kooperacji jesteśmy w stanie działać szybciej i efektywniej, co
+            przekłada się na zadowolenie wśród odbiorców.
+          </div>
           <CompaniesCarousel />
         </BasicSection>
         <BasicSection customClass={styles.FAQ}>

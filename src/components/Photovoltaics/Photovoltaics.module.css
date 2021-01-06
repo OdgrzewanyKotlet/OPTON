@@ -22,7 +22,9 @@
   margin-top: 11%;
   margin-bottom: 10%;
 }
-
+.FinanceText {
+  margin: 0px 10%;
+}
 .FirstStepContent {
   width: 55%;
   height: 100%;
