@@ -20,10 +20,10 @@ class Alarms extends Component {
   render() {
     return (
       <React.Fragment>
-        <FirstSection
+        {/* <FirstSection
           title="Zadbaj o bezpieczeństwo swoje i swoich bliskich"
           backgroundImage={FirstSectionBg}
-        />
+        /> */}
         <Infos />
 
         <CounterSection />
@@ -36,9 +36,7 @@ class Alarms extends Component {
             <Fade left>
               <div className={styles.CareTitle}>
                 <h2>Wiemy jak o Ciebie zadbać</h2>
-                <div
-                  style={{ border: "solid #00ce1b 1px", width: "20%" }}
-                ></div>
+                <div className={styles.UnderLine}></div>
               </div>
             </Fade>
             <Fade right cascade>
