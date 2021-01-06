@@ -2,11 +2,9 @@
   border: 1px solid black;
   display: inline-block;
   height: 300px;
-  width: 400px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 80px;
-  margin-top: 10px;
+  width: 40%;
+  margin: 10px 10px 80px 10px;
+
   vertical-align: top;
 }
 
@@ -34,4 +32,13 @@
   padding-right: 5%;
   letter-spacing: 200%;
   margin-top: 20px;
+}
+@media (max-width: 749px) {
+  .Counter {
+    margin: 10px 0px 80px 0px;
+    width: 80%;
+  }
+  .CountUp {
+    font-size: 60px;
+  }
 }
