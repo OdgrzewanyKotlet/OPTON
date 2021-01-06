@@ -20,10 +20,10 @@ class Alarms extends Component {
   render() {
     return (
       <React.Fragment>
-        {/* <FirstSection
+        <FirstSection
           title="Zadbaj o bezpieczeństwo swoje i swoich bliskich"
           backgroundImage={FirstSectionBg}
-        /> */}
+        />
         <Infos />
 
         <CounterSection />
@@ -79,9 +79,7 @@ class Alarms extends Component {
 
         <BasicSection customClass={styles.Contact}>
           <h2>Skontaktuj się z nami</h2>
-          <div style={{ paddingBottom: "20px" }}>
-            Pomożemy ci podjąć właściwe decyzje
-          </div>
+          <div>Pomożemy ci podjąć właściwe decyzje</div>
           <Button clicked={this.contactButtonClickedHandler}>
             Napisz do nas
           </Button>

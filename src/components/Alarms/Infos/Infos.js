@@ -4,7 +4,7 @@ import styles from "./Infos.module.css";
 import Info from "./Info/Info";
 
 const infos = (props) => (
-  <React.Fragment className={styles.Line}>
+  <React.Fragment>
     <Info
       title="Czym jest instalacja alarmowa?"
       content="Instalacją alarmową określa się systemy sygnalizujące włamanie, zagrożenie lub inne niebezpieczeństwa spotykane w domu. W tym celu wykorzystuje się zaawansowane czujniki oraz urządzenia połączone z centralnym systemem zarządzającym. Alarm stanowi drugi najważniejszy element ochrony majątku po zabezpieczeniu mechanicznym."
