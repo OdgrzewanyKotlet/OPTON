@@ -4,7 +4,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
   background-size: cover;
-  height: 250px;
+  height: auto;
   color: white;
 }
 .UnderLine {
@@ -54,7 +54,8 @@
   font-size: 28px;
   margin-bottom: 0;
 }
-
+.Contact button {
+}
 .Secure {
   text-align: left;
   background-image: url("../../assets/images/alarms-secure.jpg");

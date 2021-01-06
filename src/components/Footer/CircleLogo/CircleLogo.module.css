@@ -1,10 +1,13 @@
 .CircleLogo {
-  background-color: rgba(0, 0, 0, 0);
-  padding: 10px;
+  padding-top: 10px;
   height: 100%;
-  margin-left: 20%;
 }
 
 .CircleLogo img {
   height: 50%;
+}
+@media (max-width: 749px) {
+  .CircleLogo img {
+    height: 20%;
+  }
 }

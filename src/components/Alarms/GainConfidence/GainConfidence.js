@@ -15,26 +15,26 @@ const gainConfidence = (props) => (
       </Fade>
       <Fade right cascade>
         <div className={styles.ListSection}>
+          <h4>OBRAZ Z MONITORINGU</h4>
           <p>
-            <h4>OBRAZ Z MONITORINGU</h4>Najważniejszą cechą monitoringu jest
-            dostarczanie informacji. Gdy dojdzie do jakiegoś zdarzenia –
-            napaści, bójki, uszkodzenia mienia, kradzieży i innych – obraz z
-            monitoringu daje podstawy do wskazania osób odpowiedzialnych i
-            udowodnienia im winy na drodze sądowej.
+            Najważniejszą cechą monitoringu jest dostarczanie informacji. Gdy
+            dojdzie do jakiegoś zdarzenia – napaści, bójki, uszkodzenia mienia,
+            kradzieży i innych – obraz z monitoringu daje podstawy do wskazania
+            osób odpowiedzialnych i udowodnienia im winy na drodze sądowej.
           </p>
+          <h4>O KAŻDEJ PORZE DNIA</h4>
           <p>
-            <h4>O KAŻDEJ PORZE DNIA</h4>Najważniejszą cechą monitoringu jest
-            dostarczanie informacji. Gdy dojdzie do jakiegoś zdarzenia –
-            napaści, bójki, uszkodzenia mienia, kradzieży i innych – obraz z
-            monitoringu daje podstawy do wskazania osób odpowiedzialnych i
-            udowodnienia im winy na drodze sądowej.
+            Najważniejszą cechą monitoringu jest dostarczanie informacji. Gdy
+            dojdzie do jakiegoś zdarzenia – napaści, bójki, uszkodzenia mienia,
+            kradzieży i innych – obraz z monitoringu daje podstawy do wskazania
+            osób odpowiedzialnych i udowodnienia im winy na drodze sądowej.
           </p>
+          <h4>KONTROLA W ZASIĘGU RĘKI</h4>
           <p>
-            <h4>KONTROLA W ZASIĘGU RĘKI</h4>Najważniejszą cechą monitoringu jest
-            dostarczanie informacji. Gdy dojdzie do jakiegoś zdarzenia –
-            napaści, bójki, uszkodzenia mienia, kradzieży i innych – obraz z
-            monitoringu daje podstawy do wskazania osób odpowiedzialnych i
-            udowodnienia im winy na drodze sądowej.
+            Najważniejszą cechą monitoringu jest dostarczanie informacji. Gdy
+            dojdzie do jakiegoś zdarzenia – napaści, bójki, uszkodzenia mienia,
+            kradzieży i innych – obraz z monitoringu daje podstawy do wskazania
+            osób odpowiedzialnych i udowodnienia im winy na drodze sądowej.
           </p>
         </div>
       </Fade>
