@@ -7,8 +7,6 @@
 
 /* Style the video: 100% width and height to cover the entire window */
 .Video {
-  width: 100%;
-  height: auto;
 }
 
 /* Add some content at the bottom of the video/page */
@@ -33,12 +31,16 @@
   font-size: 70px;
 }
 @media (max-width: 749px) {
+  video {
+    object-fit: cover;
+  }
   .SubContent h2 {
-    font-size: 30px;
+    font-size: 50px;
   }
   .SubContent {
-    font-size: 10px;
-    text-align: left;
-    padding: 10px 55% 10px 20%;
+    font-size: 15px;
+    text-align: center;
+    width: 60%;
+    padding: 0;
   }
 }

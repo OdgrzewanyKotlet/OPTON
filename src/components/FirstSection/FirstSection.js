@@ -37,7 +37,7 @@ const FirstSection = (props) => {
           <p className={styles.Content}>{props.content}</p>
         </div>
       </Fade>
-      {contactButton}
+      <div className={styles.ButtonWrap}> {contactButton}</div>
     </div>
   );
 };
