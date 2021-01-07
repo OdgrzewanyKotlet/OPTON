@@ -5,15 +5,21 @@ import styles from "./Contact.module.css";
 
 class Contact extends Component {
   render() {
+    let tel = "tel:600668695";
+    let mail = "mailto:biuro@opton.net.pl";
     return (
       <React.Fragment>
         <Form />
         <BasicSection customClass={styles.Info}>
           <center>
             <p className={styles.SmallInfo}>TELEFON</p>
-            <p className={styles.BigInfo}>+48 600 668 695</p>
+            <a href={tel} className={styles.BigInfo}>
+              +48 600 668 695
+            </a>
             <p className={styles.SmallInfo}>E-MAIL</p>
-            <p className={styles.BigInfo}>biuro@opton.net.pl</p>
+            <a href={mail} className={styles.BigInfo}>
+              biuro@opton.net.pl
+            </a>
             <p className={styles.SmallInfo}>ADRES</p>
             <p className={styles.Address}>
               ul. Ks. A. Kordeckiego 34/4, Bydgoszcz 85-225

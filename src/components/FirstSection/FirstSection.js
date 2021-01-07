@@ -31,13 +31,18 @@ const FirstSection = (props) => {
       className={styles.FirstSection}
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <Fade cascade duration={3000}>
-        <div>
-          <h2 className={styles.Title}>{props.title}</h2>
-          <p className={styles.Content}>{props.content}</p>
-        </div>
+      <div>
+        {" "}
+        <Fade duration={3000}>
+          <h2 className={styles.Title}>{props.title}</h2>{" "}
+        </Fade>
+        <Fade duration={3000} delay={500}>
+          <p className={styles.Content}>{props.content}</p>{" "}
+        </Fade>
+      </div>
+      <Fade duration={3000} delay={1000}>
+        <div className={styles.ButtonWrap}> {contactButton}</div>{" "}
       </Fade>
-      <div className={styles.ButtonWrap}> {contactButton}</div>
     </div>
   );
 };

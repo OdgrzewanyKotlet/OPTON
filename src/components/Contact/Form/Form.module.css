@@ -23,8 +23,8 @@
 }
 
 .ReCaptcha {
-  width: 20%;
-  margin: 20px 37% 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .Title {
