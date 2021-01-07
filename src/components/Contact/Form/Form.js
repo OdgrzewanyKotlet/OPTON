@@ -112,7 +112,6 @@ class Form extends Component {
               <MenuItem value="other">Inne</MenuItem>
             </Select>
           </FormControl>
-
           <TextValidator
             className={styles.InputField}
             id="name"
@@ -133,7 +132,6 @@ class Form extends Component {
             validators={["required"]}
             errorMessages={["To pole jest wymagane"]}
           />
-
           <TextValidator
             className={styles.InputField}
             id="email"
@@ -147,7 +145,6 @@ class Form extends Component {
               "Adres email jest niepoprawny",
             ]}
           />
-
           <TextField
             className={styles.InputField}
             id="telephone"
@@ -156,7 +153,6 @@ class Form extends Component {
             value={this.state.telephone}
             onChange={(event) => this.inputChangedHandler(event, "telephone")}
           />
-
           <TextValidator
             className={styles.InputField}
             id="content"

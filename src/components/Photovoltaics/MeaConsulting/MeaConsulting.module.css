@@ -6,6 +6,7 @@
 }
 
 .MeaLogo {
+  max-height: 150px;
   width: 30%;
   height: auto;
   position: absolute;
