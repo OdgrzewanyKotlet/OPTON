@@ -45,8 +45,8 @@ export default function FAQ() {
             Koszt instalacji zależy od jej mocy zainstalowanej oraz
             zastosowanych materiałów (paneli i inwertera) Im większa instalacja
             tym cena jednostkowa instalacji maleje. W celu uzyskania wyceny
-            zapraszamy do kontaktu z naszą Firmą. Zapewniamy bezpłatny audyt,
-            który określi, jaka moc przyłączeniowa będzie potrzebna.
+            zapraszamy do kontaktu z&nbsp;naszą Firmą. Zapewniamy bezpłatny
+            audyt, który określi, jaka moc przyłączeniowa będzie potrzebna.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -65,8 +65,8 @@ export default function FAQ() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Zależnie od wielkości i stopnia skomplikowania instalacji. Średni
-            czas montażu dla instalacji do 5 KW to 2-3 dni.
+            Zależnie od wielkości i&nbsp;stopnia skomplikowania instalacji.
+            Średni czas montażu dla instalacji do 5 KW to 2-3 dni.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -87,8 +87,8 @@ export default function FAQ() {
           <Typography>
             Producent wykorzystywanych przez nas paneli CanadianSolar obejmuje
             gwarancją spadek mocy do 25 lat. Gwarancja udzielana na instalację
-            przez naszą firmę obejmuje okres do 5 lat z możliwością jej
-            przedłużenia. W przypadku falowników w zależności od producenta
+            przez naszą firmę obejmuje okres do 5 lat z&nbsp;możliwością jej
+            przedłużenia. W&nbsp;przypadku falowników w zależności od producenta
             gwarancja zwykle wynosi od 7-10 lat.
           </Typography>
         </AccordionDetails>
@@ -108,12 +108,13 @@ export default function FAQ() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Przed wprowadzeniem modułów na rynek panele zostają poddane testom i
-            kontrolom stąd ich awaryjność jest bardzo niska. W pierwszym roku
-            użytkowania producenci deklarują spadek mocy do wartości nie
-            mniejszej niż 98% mocy wyjściowej. Od 2 roku do 25 lat deklarowana
-            wartość spadku mocy wynosi 0,55% w skali roku. Pod koniec 25 lat
-            działania rzeczywista moc wyjściowa nie spadnie poniżej 84,8%.
+            Przed wprowadzeniem modułów na rynek panele zostają poddane testom
+            i&nbsp;kontrolom stąd ich awaryjność jest bardzo niska. W pierwszym
+            roku użytkowania producenci deklarują spadek mocy do wartości nie
+            mniejszej niż 98% mocy wyjściowej. Od 2&nbsp;roku do 25 lat
+            deklarowana wartość spadku mocy wynosi 0,55% w skali roku. Pod
+            koniec 25 lat działania rzeczywista moc wyjściowa nie spadnie
+            poniżej 84,8%.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -132,14 +133,14 @@ export default function FAQ() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Jeżeli na panele padają promienie słoneczne i nie zalega na nich
-            śnieg to moduły będą wytwarzały energię elektryczną. Instalacja ma
-            obniżoną wydajność wyłącznie ze względu na krótszy okres czasu
-            pomiędzy wschodem a zachodem słońca oraz mniej intensywne światło
-            słoneczne. Na korzyść właścicieli instalacji wpływa fakt, że
+            Jeżeli na panele padają promienie słoneczne i&nbsp;nie zalega na
+            nich śnieg to moduły będą wytwarzały energię elektryczną. Instalacja
+            ma obniżoną wydajność wyłącznie ze względu na krótszy okres czasu
+            pomiędzy wschodem a&nbsp;zachodem słońca oraz mniej intensywne
+            światło słoneczne. Na korzyść właścicieli instalacji wpływa fakt, że
             sprawność modułów wzrasta wraz z obniżaniem się ich temperatury, co
-            oznacza że najlepszymi warunkami do produkcji energii są słoneczne i
-            chłodne dni, czyli dokładnie takie, które panują zimą.
+            oznacza że najlepszymi warunkami do produkcji energii są słoneczne
+            i&nbsp;chłodne dni, czyli dokładnie takie, które panują zimą.
           </Typography>
         </AccordionDetails>
       </Accordion>

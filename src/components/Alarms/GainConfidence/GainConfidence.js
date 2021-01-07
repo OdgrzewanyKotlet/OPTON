@@ -19,22 +19,25 @@ const gainConfidence = (props) => (
           <p>
             Najważniejszą cechą monitoringu jest dostarczanie informacji. Gdy
             dojdzie do jakiegoś zdarzenia – napaści, bójki, uszkodzenia mienia,
-            kradzieży i innych – obraz z monitoringu daje podstawy do wskazania
-            osób odpowiedzialnych i udowodnienia im winy na drodze sądowej.
+            kradzieży i&nbsp;innych – obraz z&nbsp;monitoringu daje podstawy do
+            wskazania osób odpowiedzialnych i&nbsp;udowodnienia im winy na
+            drodze sądowej.
           </p>
           <h4>O KAŻDEJ PORZE DNIA</h4>
           <p>
             Najważniejszą cechą monitoringu jest dostarczanie informacji. Gdy
             dojdzie do jakiegoś zdarzenia – napaści, bójki, uszkodzenia mienia,
-            kradzieży i innych – obraz z monitoringu daje podstawy do wskazania
-            osób odpowiedzialnych i udowodnienia im winy na drodze sądowej.
+            kradzieży i&nbsp;innych – obraz z&nbsp;monitoringu daje podstawy do
+            wskazania osób odpowiedzialnych i&nbsp;udowodnienia im winy na
+            drodze sądowej.
           </p>
           <h4>KONTROLA W ZASIĘGU RĘKI</h4>
           <p>
             Najważniejszą cechą monitoringu jest dostarczanie informacji. Gdy
             dojdzie do jakiegoś zdarzenia – napaści, bójki, uszkodzenia mienia,
-            kradzieży i innych – obraz z monitoringu daje podstawy do wskazania
-            osób odpowiedzialnych i udowodnienia im winy na drodze sądowej.
+            kradzieży i&nbsp;innych – obraz z monitoringu daje podstawy do
+            wskazania osób odpowiedzialnych i&nbsp;udowodnienia im winy na
+            drodze sądowej.
           </p>
         </div>
       </Fade>

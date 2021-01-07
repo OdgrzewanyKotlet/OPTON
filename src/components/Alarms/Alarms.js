@@ -45,22 +45,24 @@ class Alarms extends Component {
                 <p>
                   Jeśli nie masz możliwości samodzielnego zareagowania podczas
                   sabotażu zdaj się na system umożliwiający połączenie Twojego
-                  domu z biurem agencji ochrony. Sprawna reakcja odpowiednich
-                  służb zwiększy Twoją swobodę oraz poczucie bezpieczeństwa.
+                  domu z&nbsp;biurem agencji ochrony. Sprawna reakcja
+                  odpowiednich służb zwiększy Twoją swobodę oraz poczucie
+                  bezpieczeństwa.
                 </p>
                 <h4>Zdalne sterowanie</h4>
                 <p>
-                  Prowadzisz zabiegany tryb życia? Chcesz mieć pewność o
-                  właściwej pracy systemu? Dzięki zdalnemu trybowi kontroli nad
-                  systemem będziesz w stanie sprawdzić jego stan, przejrzeć
-                  zdarzenia a nawet uzbroić lub wyłączyć alarm z poziomu
-                  aplikacji.
+                  Prowadzisz zabiegany tryb życia? Chcesz mieć pewność
+                  o&nbsp;właściwej pracy systemu? Dzięki zdalnemu trybowi
+                  kontroli nad systemem będziesz w&nbsp;stanie sprawdzić jego
+                  stan, przejrzeć zdarzenia a&nbsp;nawet uzbroić lub wyłączyć
+                  alarm z&nbsp;poziomu aplikacji.
                 </p>
                 <h4>Ubezpieczenie</h4>
                 <p>
-                  Zapewniając sobie i swojej rodzinie bezpieczeństwo w postaci
-                  instalacji alarmowej możesz liczyć na znaczną zniżkę nawet do
-                  40% przy wykupie ubezpieczenia dla swojego domu.
+                  Zapewniając sobie i&nbsp;swojej rodzinie bezpieczeństwo
+                  w&nbsp;postaci instalacji alarmowej możesz liczyć na znaczną
+                  zniżkę nawet do 40% przy wykupie ubezpieczenia dla swojego
+                  domu.
                 </p>
               </div>
             </Fade>
@@ -83,6 +85,7 @@ class Alarms extends Component {
           <Button clicked={this.contactButtonClickedHandler}>
             Napisz do nas
           </Button>
+          <div style={{ paddingBottom: "20px" }}></div>
         </BasicSection>
       </React.Fragment>
     );
