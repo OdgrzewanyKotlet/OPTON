@@ -9,7 +9,7 @@ const counterSection = (props) => (
     <Counter
       end={67}
       title="BEZ ZABEZPIECZENIA"
-      content="Aż tyle domostw w Polsce wciąż nie posiada żadnych zabezpieczeń. Razem możemy zmienić te statystyki."
+      content="Aż tyle domostw w&nbsp;Polsce wciąż nie posiada żadnych zabezpieczeń. Razem możemy zmienić te statystyki."
     />
     <Counter
       end={70}

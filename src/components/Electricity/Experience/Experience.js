@@ -8,17 +8,20 @@ import ExperienceFeature from "./ExperienceFeature/ExperienceFeature";
 const experience = (props) => (
   <div className={styles.Experience}>
     <center>
-      <Zoom cascade>
-        <h2 className={styles.Title}>Nasze doświadczenie w Twoim domu</h2>
+      <Zoom>
+        <h2 className={styles.Title}>Nasze doświadczenie w&nbsp;Twoim domu</h2>
+      </Zoom>
+      <Zoom delay={500}>
         <p className={styles.Content}>
           Zebrane na przestrzeni wielu lat doświadczenie pozwala zapewnić
-          naszych klientów o satysfakcji z ciągłości i funkcjonalności działania
-          naszych instalacji.
+          naszych klientów o&nbsp;satysfakcji z&nbsp;ciągłości
+          i&nbsp;funkcjonalności działania naszych instalacji.
         </p>
       </Zoom>
+
       <ExperienceFeature
         title="LEGALNOŚĆ"
-        content="Jesteśmy zarejestrowaną i w pełni legalnie działającą firmą. Nasze usługi oferujemy na terenie całej Polski."
+        content="Jesteśmy zarejestrowaną i&nbsp;w&nbsp; pełni legalnie działającą firmą. Nasze usługi oferujemy na terenie całej Polski."
       />
       <ExperienceFeature
         title="UPRAWNIENIA"
@@ -26,7 +29,7 @@ const experience = (props) => (
       />
       <ExperienceFeature
         title="RZETELNOŚĆ"
-        content="Każde przyjęte zlecenie traktujemy z należytą uwagą, poświęcając czas na dobór najlepszych rozwiązań i stały kontakt z klientem. Gwarantujemy terminość wykonania prac."
+        content="Każde przyjęte zlecenie traktujemy z&nbsp;należytą uwagą, poświęcając czas na dobór najlepszych rozwiązań i&nbsp;stały kontakt z&nbsp;klientem. Gwarantujemy terminość wykonania prac."
       />
     </center>
   </div>

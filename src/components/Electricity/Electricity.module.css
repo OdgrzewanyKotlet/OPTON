@@ -9,6 +9,7 @@
 }
 
 .Aesthetics {
+  min-height: 400px;
   padding: 100px 32%;
 }
 
@@ -21,4 +22,24 @@
   background-attachment: fixed;
   color: white;
   padding: 200px 20%;
+}
+@media (max-width: 749px) {
+  .Smart {
+    text-align: center;
+    padding: 200px 10%;
+    background-position-x: -400px;
+  }
+  .Aesthetics {
+    padding: 100px 10%;
+    text-align: justify;
+  }
+  .Contact h2 {
+    font-size: 30px;
+  }
+  .Aesthetics h2 {
+    text-align: center;
+  }
+  .Contact {
+    height: auto;
+  }
 }

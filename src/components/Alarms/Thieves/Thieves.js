@@ -19,7 +19,7 @@ const thieves = () => {
             <p>
               Niewyjaśnione sytuacje stają się jasne. Monitoring powinien być
               integralną częścią każdego systemu alarmowego. Mając na uwadze to
-              i zebrane doświadczenie, możemy zaoferować Ci najlepsze
+              i&nbsp;zebrane doświadczenie, możemy zaoferować Ci najlepsze
               rozwiązania.
             </p>
           </div>

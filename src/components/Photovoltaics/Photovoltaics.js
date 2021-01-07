@@ -31,7 +31,7 @@ class Photovoltaics extends Component {
     return (
       <React.Fragment>
         <FirstSection
-          title="Fotowoltaika dla Twojego domu i biznesu"
+          title="Fotowoltaika dla Twojego domu i&nbsp;biznesu"
           content="Postaw na odnawialne źródła energii wykorzystując nowoczesne rozwiązania z zakresu technologii fotowoltaicznych i obniż swój rachunek za prąd."
           backgroundImage="https://opton.net.pl/wp-content/uploads/2020/09/pexels-pixabay-356036-scaled.jpg"
           contactButton
@@ -48,11 +48,11 @@ class Photovoltaics extends Component {
             <Fade right>
               <div className={styles.FirstStepContent}>
                 <p>
-                  Zacznijmy od zebrania rachunków za energię elektryczną z
-                  okresu jednego roku. Dogłębna analiza pozwoli nam na
-                  precyzyjne określenie zużycia energii elektrycznej w Twoim
-                  gospodarstwie. Na tej podstawie określimy wielkość instalacji
-                  fotowoltaicznej.
+                  Zacznijmy od zebrania rachunków za energię elektryczną
+                  z&nbsp;okresu jednego roku. Dogłębna analiza pozwoli nam na
+                  precyzyjne określenie zużycia energii elektrycznej
+                  w&nbsp;Twoim gospodarstwie. Na tej podstawie określimy
+                  wielkość instalacji fotowoltaicznej.
                 </p>
                 <p>
                   Bardzo ważną kwestią jest wybór miejsca montażu instalacji
@@ -67,8 +67,8 @@ class Photovoltaics extends Component {
                 <p>
                   Informacje, które zgromadzimy podczas przechodzenia przez
                   poszczególne kroki, pozwolą nam opracować ofertę. Po
-                  pozytywnej decyzji klienta umawiamy dogodny termin i
-                  realizujemy zlecenie.
+                  pozytywnej decyzji klienta umawiamy dogodny termin
+                  i&nbsp;realizujemy zlecenie.
                 </p>
               </div>
             </Fade>
@@ -85,13 +85,14 @@ class Photovoltaics extends Component {
         <BasicSection>
           <h2>Finansowanie</h2>
           <div className={styles.FinanceText}>
-            Zyskaj czas i pieniądze dzięki naszej ścisłej współpracy z
-            niezależną grupą specjalistów MEAConsulting. Dla pełnej satysfakcji
-            klienta usługi związane z dofinansowaniami, kredytami i leasingami
-            powierzamy profesjonalistom, którzy na bieżąco śledzą i analizują
-            formy finansowania naszych instalacji. Dzięki takiej formie
-            kooperacji jesteśmy w stanie działać szybciej i efektywniej, co
-            przekłada się na zadowolenie wśród odbiorców.
+            Zyskaj czas i&nbsp;pieniądze dzięki naszej ścisłej współpracy
+            z&nbsp;niezależną grupą specjalistów MEAConsulting. Dla pełnej
+            satysfakcji klienta usługi związane z&nbsp;dofinansowaniami,
+            kredytami i&nbsp;leasingami powierzamy profesjonalistom, którzy na
+            bieżąco śledzą i&nbsp;analizują formy finansowania naszych
+            instalacji. Dzięki takiej formie kooperacji jesteśmy w&nbsp;stanie
+            działać szybciej i&nbsp;efektywniej, co przekłada się na zadowolenie
+            wśród odbiorców.
           </div>
           <CompaniesCarousel />
         </BasicSection>
@@ -108,6 +109,7 @@ class Photovoltaics extends Component {
           <Button clicked={this.contactButtonClickedHandler}>
             SKONTAKTUJ SIĘ Z NAMI
           </Button>
+          <div style={{ paddingBottom: "20px" }}></div>
         </BasicSection>
       </React.Fragment>
     );

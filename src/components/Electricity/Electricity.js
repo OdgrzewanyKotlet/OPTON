@@ -28,19 +28,21 @@ class Electricity extends Component {
           <Fade left>
             <h2>Przygotuj się na Smart Home</h2>
             Od tego się zaczyna! Już na etapie projektowania instalacji
-            elektrycznej pomyśl o smart rozwiązaniach. Dzięki rozbudowanej i
-            przemyślanej instalacji elektrycznej w łatwy sposób zaadaptujesz do
-            swojego domu inteligentne rozwiązania.
+            elektrycznej pomyśl o&nbsp;smart rozwiązaniach. Dzięki rozbudowanej
+            i&nbsp;przemyślanej instalacji elektrycznej w&nbsp;łatwy sposób
+            zaadaptujesz do swojego domu inteligentne rozwiązania.
           </Fade>
         </BasicSection>
         <BasicSection customClass={styles.Aesthetics}>
           <Fade big>
-            <h2>Estetyka pracy i wykonania</h2>
-            Wykonując dany projekt dbamy nie tylko o jego trwałość i
-            funkcjonalność ale również o estetykę. Ma ona ogromny wpływ
-            zwłaszcza w przypadku domów i mieszkań. Porządek i przygotowanie
-            wszystkiego według powszechnych norm pozwala ułatwić wszelkie prace
-            związane z elektryką.
+            <h2>Estetyka pracy i&nbsp;wykonania</h2>{" "}
+          </Fade>
+          <Fade delay={500}>
+            Wykonując dany projekt dbamy nie tylko o jego trwałość
+            i&nbsp;funkcjonalność ale również o&nbsp;estetykę. Ma ona ogromny
+            wpływ zwłaszcza w przypadku domów i&nbsp;mieszkań. Porządek
+            i&nbsp;przygotowanie wszystkiego według powszechnych norm pozwala
+            ułatwić wszelkie prace związane z&nbsp;elektryką.
           </Fade>
         </BasicSection>
         <BasicSection customClass={styles.Contact}>
@@ -51,6 +53,7 @@ class Electricity extends Component {
           <Button clicked={this.contactButtonClickedHandler}>
             Napisz do nas
           </Button>
+          <div style={{ paddingBottom: "20px" }}></div>
         </BasicSection>
       </React.Fragment>
     );

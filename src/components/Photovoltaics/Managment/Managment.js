@@ -8,25 +8,25 @@ import ArrowElement from "./ArrowElement/ArrowElement";
 
 const managment = (props) => (
   <div className={styles.Managment}>
-    <Fade cascade>
+    <Fade>
       <h2 className={styles.Title}>Zarządzaj z dowolnego miejsca</h2>
       <p className={styles.Content}>
         Monitoring to nie tylko sprawdzanie uzysków, ale również środek na
-        kontrolowanie Twojego systemu przez Ciebie i instalatora. Dzięki
-        dedykowanym aplikacjom zarówno klient jak i my otrzymujemy aktualne dane
-        o pracy Twojej instalacji. Takie rozwiązania pomagają nam szybciej
-        zlokalizować ewentualną usterkę oraz rozwiązać problem.​
+        kontrolowanie Twojego systemu przez Ciebie i&nbsp;instalatora. Dzięki
+        dedykowanym aplikacjom zarówno klient jak i&nbsp;my otrzymujemy aktualne
+        dane o&nbsp;pracy Twojej instalacji. Takie rozwiązania pomagają nam
+        szybciej zlokalizować ewentualną usterkę oraz rozwiązać problem.​
       </p>
     </Fade>
     <div className={styles.Wrapper}>
       <div className={styles.ListSection}>
         <ArrowElement
           title="Zyskaj"
-          content="wgląd w czasie rzeczywistym w zużycie energii i produkcję"
+          content="wgląd w&nbsp;czasie rzeczywistym w&nbsp;zużycie energii i&nbsp;produkcję"
         />
         <ArrowElement
           title="Porównaj"
-          content="dzisiejszą produkcję z poprzednimi pomiarami i udostępnij ją rodzinie oraz znajomym"
+          content="dzisiejszą produkcję z&nbsp;poprzednimi pomiarami i&nbsp;udostępnij ją rodzinie oraz znajomym"
         />
         <ArrowElement
           title="Śledź"

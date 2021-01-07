@@ -27,3 +27,12 @@
   margin-right: 5px;
   line-height: 200%;
 }
+@media (max-width: 749px) {
+  .ExperienceFeature {
+    height: auto;
+  }
+  .Title {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+}
