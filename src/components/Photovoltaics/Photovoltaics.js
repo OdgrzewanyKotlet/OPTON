@@ -19,22 +19,40 @@ class Photovoltaics extends Component {
   state = {
     calcProps: {
       installationSize: {
-        resultValue: null,
+        icon: "Lightbulb",
+        resultName: "Wielkość instalacji",
+        resultValue: 20,
+        unit: "kWp",
       },
       energyOutput: {
-        resultValue: null,
+        icon: "Flash",
+        resultName: "Co pozwala wyprodukować w ciągu roku",
+        resultValue: 20,
+        unit: "kWh",
       },
       installationCost: {
-        resultValue: null,
+        icon: "Money",
+        resultName: "Koszt brutto instalacji",
+        resultValue: 20,
+        unit: "zł",
       },
       costPerYear: {
-        resultValue: null,
+        icon: "Bill",
+        resultName: "Roczny rachunek za prąd bez instalacji fotowoltanicznej",
+        resultValue: 20,
+        unit: "zł",
       },
       costPerYearWithPhotovoltaics: {
-        resultValue: null,
+        icon: "Wallet",
+        resultName: "Roczny rachunek z instalacją fotowoltaiczną",
+        resultValue: 20,
+        unit: "zł",
       },
       savings: {
-        resultValue: null,
+        icon: "Savings",
+        resultName: "Oszczędności przez 25 lat",
+        resultValue: 20,
+        unit: "zł",
       },
     },
     sliderValue: null,

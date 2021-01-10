@@ -7,37 +7,37 @@ class calculatorResults extends Component {
     installationSize: {
       icon: "Lightbulb",
       resultName: "Wielkość instalacji",
-      resultValue: null,
+      resultValue: 20,
       unit: "kWp",
     },
     energyOutput: {
       icon: "Flash",
       resultName: "Co pozwala wyprodukować w ciągu roku",
-      resultValue: null,
+      resultValue: 20,
       unit: "kWh",
     },
     installationCost: {
       icon: "Money",
       resultName: "Koszt brutto instalacji",
-      resultValue: null,
+      resultValue: 20,
       unit: "zł",
     },
     costPerYear: {
       icon: "Bill",
       resultName: "Roczny rachunek za prąd bez instalacji fotowoltanicznej",
-      resultValue: null,
+      resultValue: 20,
       unit: "zł",
     },
     costPerYearWithPhotovoltaics: {
       icon: "Wallet",
       resultName: "Roczny rachunek z instalacją fotowoltaiczną",
-      resultValue: null,
+      resultValue: 20,
       unit: "zł",
     },
     savings: {
       icon: "Savings",
       resultName: "Oszczędności przez 25 lat",
-      resultValue: null,
+      resultValue: 20,
       unit: "zł",
     },
   };
