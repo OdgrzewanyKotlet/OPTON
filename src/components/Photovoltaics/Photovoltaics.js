@@ -13,9 +13,30 @@ import Managment from "./Managment/Managment";
 import CompaniesCarousel from "./CompaniesCarousel/CompaniesCarousel";
 import MeaConsulting from "./MeaConsulting/MeaConsulting";
 import Calculator from "./Calculator/Calculator";
+import CalculatorResults from "./CalculatorResults/CalculatorResults";
 
 class Photovoltaics extends Component {
   state = {
+    calcProps: {
+      installationSize: {
+        resultValue: null,
+      },
+      energyOutput: {
+        resultValue: null,
+      },
+      installationCost: {
+        resultValue: null,
+      },
+      costPerYear: {
+        resultValue: null,
+      },
+      costPerYearWithPhotovoltaics: {
+        resultValue: null,
+      },
+      savings: {
+        resultValue: null,
+      },
+    },
     sliderValue: null,
   };
 
@@ -24,7 +45,47 @@ class Photovoltaics extends Component {
   };
 
   getSliderValue = (e, value) => {
-    this.setState({ sliderValue: value });
+    this.setState({
+      sliderValue: value,
+      calcProps: {
+        installationSize: {
+          icon: "Lightbulb",
+          resultName: "Wielkość instalacji",
+          resultValue: (value / 46.3).toFixed(2),
+          unit: "kWp",
+        },
+        energyOutput: {
+          icon: "Flash",
+          resultName: "Co pozwala wyprodukować w ciągu roku",
+          resultValue: (value * 20.74).toFixed(2),
+          unit: "kWh",
+        },
+        installationCost: {
+          icon: "Money",
+          resultName: "Koszt brutto instalacji",
+          resultValue: (value * 122.67).toFixed(2),
+          unit: "zł",
+        },
+        costPerYear: {
+          icon: "Bill",
+          resultName: "Roczny rachunek za prąd bez instalacji fotowoltanicznej",
+          resultValue: (value * 12).toFixed(2),
+          unit: "zł",
+        },
+        costPerYearWithPhotovoltaics: {
+          icon: "Wallet",
+          resultName: "Roczny rachunek z instalacją fotowoltaiczną",
+          resultValue: (value * 2.55).toFixed(2),
+          unit: "zł",
+        },
+        savings: {
+          icon: "Savings",
+          resultName: "Oszczędności przez 25 lat",
+          resultValue: (value * 12 - value * 2.55).toFixed(2),
+          unit: "zł",
+        },
+      },
+    });
   };
 
   render() {
@@ -78,7 +139,8 @@ class Photovoltaics extends Component {
         <BasicSection customClass={styles.Calculator}>
           <h2>Kalkulacja oszczędności</h2>
           <Calculator getValue={this.getSliderValue} />
-          TEST| {this.state.sliderValue} |TEST
+          <CalculatorResults calcProps={this.state.calcProps} />
+          {/* TEST| {this.state.sliderValue} |TEST */}
         </BasicSection>
         <Managment />
         <MeaConsulting />

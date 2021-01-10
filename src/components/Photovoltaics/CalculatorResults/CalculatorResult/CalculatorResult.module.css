@@ -1,0 +1,27 @@
+.CalculatorResult {
+  display: flex;
+  flex-flow: row;
+  width: 33.3%;
+  border: solid darkgrey 1px;
+  margin: 10px;
+  padding: 5px;
+  box-shadow: 5px 2px 2px grey;
+}
+
+.ImageBox {
+  margin: auto;
+  font-size: 50px;
+}
+
+.TextResults {
+  display: flex;
+  flex-flow: column;
+}
+
+.TextResults p {
+  font-weight: bold;
+}
+
+.TextResults h5 {
+  margin: 0 auto;
+}
