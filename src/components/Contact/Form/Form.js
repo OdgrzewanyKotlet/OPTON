@@ -27,6 +27,7 @@ class Form extends Component {
     },
     loading: false,
     send: false,
+    error: false,
     captchaVerified: false,
   };
 
@@ -56,8 +57,11 @@ class Form extends Component {
       if (result.status === "OK") {
         this.setState({ send: true, loading: false });
       }
+      if (result.status === "ERROR") {
+        this.setState({ send: false, loading: false, error: true });
+      }
     } else {
-      alert("CAPTCHA FAILED!");
+      this.setState({ error: true });
     }
   };
 
@@ -181,10 +185,24 @@ class Form extends Component {
     if (this.state.send) {
       form = (
         <Fade top duration={8000}>
-          <div className={styles.SuccessInfo}>
+          <div className={styles.SendInfo}>
             <center>
               <h2>Dziękujemy za wiadomość!</h2>
               <p>Odezwiemy się niebawem</p>
+              <hr />
+            </center>
+          </div>
+        </Fade>
+      );
+    }
+
+    if (this.state.error) {
+      form = (
+        <Fade top duration={5000}>
+          <div>
+            <center className={styles.SendInfo}>
+              <h2>Coś poszło nie tak...</h2>
+              <p>Przepraszamy za utrudnienia</p>
               <hr />
             </center>
           </div>
