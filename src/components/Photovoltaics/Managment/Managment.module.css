@@ -41,10 +41,14 @@
 
 .ImageSection img {
   display: block;
+  min-width: 120px;
   width: 70%;
   height: auto;
 }
 @media (max-width: 749px) {
+  .ListSection {
+    margin-left: 20%;
+  }
   .Content {
     margin-left: 10px;
     margin-right: 10px;
