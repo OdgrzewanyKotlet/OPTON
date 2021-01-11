@@ -45,13 +45,18 @@ class Form extends Component {
         topic: this.state.topicMap[this.state.topic],
       };
 
-      let response = await fetch("http://localhost:5000/contactsend", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json;charset=utf-8",
-        },
-        body: JSON.stringify(details),
-      });
+      let response = await fetch(
+        process.env.NODE_ENV === "production"
+          ? "opton.herokuapp.com.com/contactsend"
+          : "http://localhost:5000/contactsend",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json;charset=utf-8",
+          },
+          body: JSON.stringify(details),
+        }
+      );
 
       let result = await response.json();
       if (result.status === "OK") {
