@@ -50,6 +50,49 @@
 .Calculator {
   margin: auto;
 }
+
+.Calculator h2 {
+  margin: auto;
+}
+
+.CalculatorInfo {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-size: 20px;
+  color: gray;
+}
+
+.CalculatorTitle {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+  font-size: 40px;
+  color: black;
+}
+
+.CalculatorResultTitle {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  font-size: 40px;
+  color: gray;
+}
+
+.CalculatorSideInfo {
+  margin-top: 50px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 100px;
+  font-size: 12px;
+  color: gray;
+}
+
 @media (max-width: 749px) {
   .Wrapper {
     display: inline;
