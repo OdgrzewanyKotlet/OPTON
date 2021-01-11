@@ -10,6 +10,7 @@ import Loader from "react-loader-spinner";
 import Fade from "react-reveal/Fade";
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 import ReCAPTCHA from "react-google-recaptcha";
+import { mailServerEndpoints } from "../../../endpoints";
 
 class Form extends Component {
   state = {
@@ -45,7 +46,7 @@ class Form extends Component {
         topic: this.state.topicMap[this.state.topic],
       };
 
-      let response = await fetch("http://localhost:5000/contactsend", {
+      let response = await fetch(mailServerEndpoints.post, {
         method: "POST",
         headers: {
           "Content-Type": "application/json;charset=utf-8",
