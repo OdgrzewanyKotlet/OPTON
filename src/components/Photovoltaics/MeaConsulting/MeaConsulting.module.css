@@ -35,8 +35,3 @@
   width: auto;
   height: 70%;
 }
-@media (max-width: 749px) {
-  .MeaConsulting {
-    height: 70px;
-  }
-}

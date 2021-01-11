@@ -61,12 +61,5 @@
   margin-left: 20px;
   margin-right: 20px;
 }
-@media (max-width: 749px) {
-  .CompaniesCarousel {
-    width: 60%;
-    margin: 60px auto;
-    border-top: solid 2px;
-    border-bottom: solid 2px;
-    padding: 50px;
-  }
+@media (min-width: 749px) {
 }
