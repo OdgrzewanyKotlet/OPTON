@@ -1,10 +1,17 @@
 .Footer {
   background-color: #282828;
-  height: 200px;
+  padding: 20px auto;
+  height: 160px;
   width: 100%;
   display: flex;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+}
+
+@media (max-width: 749px) {
+  .Footer {
+    height: 200px;
+  }
 }
