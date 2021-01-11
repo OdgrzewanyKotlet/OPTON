@@ -2,7 +2,8 @@
   background-position-y: 25%;
   background-image: url("../../assets/images/photovolt-contact.jpg");
   background-size: cover;
-  height: 250px;
+  min-height: 250px;
+  height: auto;
 }
 
 .Contact h2 {
@@ -105,7 +106,9 @@
   font-size: 12px;
   color: gray;
 }
-
+.FinanceTitle h2 {
+  font-size: 40px;
+}
 @media (max-width: 749px) {
   .Wrapper {
     display: inline;
