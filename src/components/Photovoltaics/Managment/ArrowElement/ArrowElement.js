@@ -5,7 +5,7 @@ import styles from "./ArrowElement.module.css";
 import ArrowImage from "../../../../assets/images/right-arrow.svg";
 
 const arrowElement = (props) => (
-  <Fade left cascade>
+  <Fade left>
     <div className={styles.ArrowElement}>
       <div className={styles.ArrowSection}>
         <img src={ArrowImage} alt="Opton" className={styles.ArrowImage} />
