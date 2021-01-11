@@ -7,6 +7,20 @@
   height: auto;
   color: white;
 }
+
+.Contact button {
+  background-color: white;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+.Contact button:hover {
+  background-color: rgb(29, 231, 29);
+  cursor: pointer;
+}
+
 .UnderLine {
   border: solid #00ce1b 1px;
   width: 20%;

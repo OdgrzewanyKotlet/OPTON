@@ -4,6 +4,7 @@ import Fade from "react-reveal/Fade";
 
 import styles from "./Photovoltaics.module.css";
 import FirstSection from "../FirstSection/FirstSection";
+import FirstSectionImage from "../../assets/images/photopholtaics-bg.jpg";
 import BasicSection from "../BasicSection/BasicSection";
 import Button from "../UI/Button/Button";
 import Benefits from "./Benefits/Benefits";
@@ -112,7 +113,7 @@ class Photovoltaics extends Component {
         <FirstSection
           title="Fotowoltaika dla Twojego domu i&nbsp;biznesu"
           content="Postaw na odnawialne źródła energii wykorzystując nowoczesne rozwiązania z zakresu technologii fotowoltaicznych i obniż swój rachunek za prąd."
-          backgroundImage="https://opton.net.pl/wp-content/uploads/2020/09/pexels-pixabay-356036-scaled.jpg"
+          backgroundImage={FirstSectionImage}
           contactButton
         />
         <BasicSection>
@@ -155,20 +156,26 @@ class Photovoltaics extends Component {
         </BasicSection>
         <Benefits />
         <BasicSection customClass={styles.Calculator}>
-          <Fade cascade>
+          <Fade>
             <h2>Kalkulacja oszczędności</h2>
             <p className={styles.CalculatorInfo}>
               Skorzystaj z poniższego kalkulatora i sprawdź ile zarobisz dzięki
               fotowoltaice, oszczędzając na rachunkach za prąd dla Twojego domu
               lub firmy.*
             </p>
+          </Fade>{" "}
+          <Fade>
             <p className={styles.CalculatorTitle}>
               Miesięczny rachunek za prąd
             </p>
             <Calculator getValue={this.getSliderValue} />
+          </Fade>{" "}
+          <Fade>
             <p className={styles.CalculatorResultTitle}>
               Najlepiej dopasowana instalacja dla Ciebie
             </p>
+          </Fade>
+          <Fade>
             <CalculatorResults calcProps={this.state.calcProps} />
             <p className={styles.CalculatorSideInfo}>
               * Powyższe dane mają charakter orientacyjny i nie stanowią oferty
@@ -181,7 +188,7 @@ class Photovoltaics extends Component {
         </BasicSection>
         <Managment />
         <MeaConsulting />
-        <BasicSection>
+        <BasicSection customClass={styles.FinanceTitle}>
           <h2>Finansowanie</h2>
           <div className={styles.FinanceText}>
             Zyskaj czas i&nbsp;pieniądze dzięki naszej ścisłej współpracy
