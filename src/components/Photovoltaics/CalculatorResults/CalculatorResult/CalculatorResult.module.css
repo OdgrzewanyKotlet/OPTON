@@ -2,10 +2,11 @@
   display: flex;
   flex-flow: row;
   width: 33.3%;
-  border: solid darkgrey 1px;
+  border: solid darkgrey 0px;
+  border-radius: 20px;
   margin: 10px;
   padding: 5px;
-  box-shadow: 5px 2px 2px grey;
+  box-shadow: 5px 5px 8px #3140895e;
 }
 
 .ImageBox {

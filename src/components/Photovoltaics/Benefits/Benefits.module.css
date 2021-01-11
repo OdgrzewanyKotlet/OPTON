@@ -11,3 +11,12 @@
   font-size: 60px;
   padding-top: 150px;
 }
+
+@media (max-width: 749px) {
+  .Title {
+    font-size: 40px;
+  }
+  .Benefits {
+    height: auto;
+  }
+}

@@ -50,3 +50,23 @@
 .Calculator {
   margin: auto;
 }
+@media (max-width: 749px) {
+  .Wrapper {
+    display: inline;
+    width: 100%;
+  }
+  .FirstStepContent {
+    margin: auto;
+    text-align: justify;
+    width: 80%;
+    font-size: 15px;
+  }
+  .FirstStepTitle h2 {
+    font-size: 10px;
+  }
+  .FirstStepTitle {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+  }
+}

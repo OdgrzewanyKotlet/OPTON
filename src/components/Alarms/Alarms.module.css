@@ -56,16 +56,17 @@
 }
 .Contact button {
 }
+
 .Secure {
   text-align: left;
   background-image: url("../../assets/images/alarms-secure.jpg");
   background-attachment: fixed;
   color: black;
-  padding: 200px 60% 200px 20%;
+  padding: 200px 30% 200px 20%;
 }
 
 .Secure h3 {
-  font-size: 30px;
+  font-size: 60px;
 }
 @media (max-width: 749px) {
   .Contact {
@@ -118,6 +119,7 @@
     margin-bottom: 0;
   }
   .Secure h3 {
+    font-size: 30px;
     text-align: center;
     margin: auto 10px;
   }
