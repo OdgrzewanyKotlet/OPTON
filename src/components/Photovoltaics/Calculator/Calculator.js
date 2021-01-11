@@ -23,6 +23,9 @@ ValueLabelComponent.propTypes = {
 const useStyles = makeStyles((theme) => ({
   root: {
     width: 500,
+    [theme.breakpoints.down("sm")]: {
+      width: 250,
+    },
     margin: "auto",
   },
 }));
