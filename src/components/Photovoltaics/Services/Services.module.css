@@ -12,3 +12,12 @@
   display: flex;
   margin-bottom: 50px;
 }
+@media (max-width: 749px) {
+  .ContentBox {
+    margin-bottom: 0px;
+    display: block;
+  }
+  .Services {
+    margin-bottom: 40px;
+  }
+}
