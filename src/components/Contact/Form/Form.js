@@ -47,7 +47,7 @@ class Form extends Component {
 
       let response = await fetch(
         process.env.NODE_ENV === "production"
-          ? "opton.herokuapp.com.com/contactsend"
+          ? "opton.herokuapp.com/contactsend"
           : "http://localhost:5000/contactsend",
         {
           method: "POST",
