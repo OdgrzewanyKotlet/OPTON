@@ -46,8 +46,16 @@
   height: auto;
 }
 @media (max-width: 749px) {
+  .ImageSection {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 10%;
+  }
   .ListSection {
-    margin-left: 20%;
+    margin-left: 0;
   }
   .Content {
     margin-left: 10px;

@@ -155,20 +155,26 @@ class Photovoltaics extends Component {
         </BasicSection>
         <Benefits />
         <BasicSection customClass={styles.Calculator}>
-          <Fade cascade>
+          <Fade>
             <h2>Kalkulacja oszczędności</h2>
             <p className={styles.CalculatorInfo}>
               Skorzystaj z poniższego kalkulatora i sprawdź ile zarobisz dzięki
               fotowoltaice, oszczędzając na rachunkach za prąd dla Twojego domu
               lub firmy.*
             </p>
+          </Fade>{" "}
+          <Fade>
             <p className={styles.CalculatorTitle}>
               Miesięczny rachunek za prąd
             </p>
             <Calculator getValue={this.getSliderValue} />
+          </Fade>{" "}
+          <Fade>
             <p className={styles.CalculatorResultTitle}>
               Najlepiej dopasowana instalacja dla Ciebie
             </p>
+          </Fade>
+          <Fade>
             <CalculatorResults calcProps={this.state.calcProps} />
             <p className={styles.CalculatorSideInfo}>
               * Powyższe dane mają charakter orientacyjny i nie stanowią oferty
@@ -181,7 +187,7 @@ class Photovoltaics extends Component {
         </BasicSection>
         <Managment />
         <MeaConsulting />
-        <BasicSection>
+        <BasicSection customClass={styles.FinanceTitle}>
           <h2>Finansowanie</h2>
           <div className={styles.FinanceText}>
             Zyskaj czas i&nbsp;pieniądze dzięki naszej ścisłej współpracy
