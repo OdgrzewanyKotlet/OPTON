@@ -4,6 +4,7 @@ import Fade from "react-reveal/Fade";
 
 import styles from "./Photovoltaics.module.css";
 import FirstSection from "../FirstSection/FirstSection";
+import FirstSectionImage from "../../assets/images/photopholtaics-bg.jpg";
 import BasicSection from "../BasicSection/BasicSection";
 import Button from "../UI/Button/Button";
 import Benefits from "./Benefits/Benefits";
@@ -112,7 +113,7 @@ class Photovoltaics extends Component {
         <FirstSection
           title="Fotowoltaika dla Twojego domu i&nbsp;biznesu"
           content="Postaw na odnawialne źródła energii wykorzystując nowoczesne rozwiązania z zakresu technologii fotowoltaicznych i obniż swój rachunek za prąd."
-          backgroundImage="https://opton.net.pl/wp-content/uploads/2020/09/pexels-pixabay-356036-scaled.jpg"
+          backgroundImage={FirstSectionImage}
           contactButton
         />
         <BasicSection>
