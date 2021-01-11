@@ -1,11 +1,12 @@
 .Counter {
-  border: 1px solid black;
+  border: solid 0px;
   display: inline-block;
   height: 300px;
   width: 40%;
   margin: 10px 10px 80px 10px;
-
+  background-color: white;
   vertical-align: top;
+  box-shadow: 5px 5px 10px #00000086;
 }
 
 .CountUp {

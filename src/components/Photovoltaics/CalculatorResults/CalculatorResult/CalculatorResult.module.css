@@ -1,28 +1,39 @@
 .CalculatorResult {
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-flow: row;
+  min-width: 200px;
   width: 33.3%;
+  min-height: 100px;
   border: solid darkgrey 0px;
-  border-radius: 20px;
   margin: 10px;
-  padding: 5px;
+  padding: 5px 10px;
   box-shadow: 5px 5px 8px #3140895e;
 }
 
 .ImageBox {
-  margin: auto;
-  font-size: 50px;
+  font-size: 30px;
+  width: 20%;
 }
 
 .TextResults {
+  width: 80%;
   display: flex;
   flex-flow: column;
 }
 
 .TextResults p {
   font-weight: bold;
+  margin: 0;
+  margin-top: 10px;
 }
 
 .TextResults h5 {
   margin: 0 auto;
+}
+@media (max-width: 749px) {
+  .CalculatorResult {
+    width: 100%;
+  }
 }

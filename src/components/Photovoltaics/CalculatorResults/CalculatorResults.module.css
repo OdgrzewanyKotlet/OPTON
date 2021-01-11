@@ -1,6 +1,11 @@
 .CalculatorResults {
   display: flex;
   flex-flow: row;
-  width: 40%;
+  width: 60%;
   margin: auto;
+}
+@media (max-width: 749px) {
+  .CalculatorResults {
+    flex-flow: column;
+  }
 }

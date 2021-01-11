@@ -1,9 +1,10 @@
 .Benefits {
   text-align: center;
   width: 100%;
-  height: 800px;
+  height: auto;
   background-image: url("../../../assets/images/benefits-bg.jpg");
   background-size: cover;
+  padding-bottom: 60px;
 }
 
 .Title {
@@ -17,6 +18,7 @@
     font-size: 40px;
   }
   .Benefits {
+    padding: auto;
     height: auto;
   }
 }
