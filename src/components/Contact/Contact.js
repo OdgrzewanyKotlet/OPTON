@@ -30,10 +30,10 @@ class Contact extends Component {
           title="Opton-Google-Maps"
           width="100%"
           height="400"
-          frameborder="0"
+          frameBorder="0"
           scrolling="no"
-          marginheight="0"
-          marginwidth="0"
+          marginHeight="0"
+          marginWidth="0"
           id="gmap_canvas"
           src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Ksi%C4%99dza%20Augustyna%20Kordeckiego%2034%20Bydgoszcz+(Opton)&amp;t=p&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         ></iframe>
