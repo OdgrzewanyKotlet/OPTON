@@ -107,6 +107,9 @@
 }
 
 @media (max-width: 749px) {
+  .CalculatorTitle {
+    font-size: 30px;
+  }
   .Wrapper {
     display: inline;
     width: 100%;
@@ -117,10 +120,15 @@
     width: 80%;
     font-size: 15px;
   }
-
+  .CalculatorResultTitle {
+    font-size: 30px;
+  }
   .FirstStepTitle {
     margin: auto;
     text-align: center;
     width: 100%;
+  }
+  .FinanceTitle h2 {
+    font-size: 35px;
   }
 }

@@ -35,3 +35,12 @@
   width: auto;
   height: 70%;
 }
+@media (max-width: 749px) {
+  .MeaLogo {
+    height: 40%;
+  }
+  .MeaLogo:hover {
+    width: auto;
+    height: 45%;
+  }
+}

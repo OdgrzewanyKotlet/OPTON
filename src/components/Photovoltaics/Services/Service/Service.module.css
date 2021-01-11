@@ -11,3 +11,8 @@
   font-size: 12px;
   padding: 10px 20px;
 }
+@media (max-width: 749px) {
+  .Service {
+    max-width: 100%;
+  }
+}
