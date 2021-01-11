@@ -10,7 +10,7 @@ import Loader from "react-loader-spinner";
 import Fade from "react-reveal/Fade";
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 import ReCAPTCHA from "react-google-recaptcha";
-import { API_URL, mailServerEndpoints } from "../../../endpoints";
+import { mailServerEndpoints } from "../../../endpoints";
 
 class Form extends Component {
   state = {
