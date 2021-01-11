@@ -3,6 +3,7 @@
   width: 100%;
   height: auto;
   background-image: url("../../../assets/images/benefits-bg.jpg");
+  background-attachment: fixed;
   background-size: cover;
   padding-bottom: 60px;
 }
