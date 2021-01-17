@@ -11,7 +11,7 @@ export function fb(callback) {
     if (!window.fbAsyncInit) {
       window.fbAsyncInit = () => {
         window.FB.init({
-          appId: process.env.REACT_APP_FB_APP_ID,
+          appId: null,
           autoLogAppEvents: true,
           status: true,
           cookie: true,
