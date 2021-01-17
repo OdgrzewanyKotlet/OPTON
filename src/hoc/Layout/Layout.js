@@ -41,7 +41,7 @@ class Layout extends Component {
             background: "#00cc99",
             color: "white",
             fontSize: "14px",
-            marginRight: "20px",
+            marginRight: "120px",
           }}
           enableDeclineButton
           declineButtonText="Polityka prywatności"
@@ -49,7 +49,7 @@ class Layout extends Component {
             background: "#00cc99",
             color: "white",
             fontSize: "14px",
-            marginRight: "5px",
+            marginRight: "1px",
           }}
           onDecline={() => {
             this.props.history.push("/polityka-prywatnosci");
