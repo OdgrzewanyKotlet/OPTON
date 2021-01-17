@@ -7,6 +7,7 @@ import styles from "./Layout.module.css";
 import Toolbar from "../../components/Navigation/Toolbar/Toolbar";
 import SideDrawer from "../../components/Navigation/SideDrawer/SideDrawer";
 import Footer from "../../components/Footer/Footer";
+import CustomerChat from "../../components/UI/CustomerChat/CustomerChat";
 
 class Layout extends Component {
   state = {
@@ -31,6 +32,7 @@ class Layout extends Component {
           open={this.state.showSideDrawer}
           closed={this.sideDrawerClosedHandler}
         />
+        <CustomerChat />
         <main className={styles.Content}>{this.props.children}</main>
         <Footer />
         <CookieConsent
