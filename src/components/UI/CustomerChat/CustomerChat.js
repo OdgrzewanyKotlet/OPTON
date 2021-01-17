@@ -19,13 +19,7 @@ class CustomerChat extends React.PureComponent {
         className="fb-customerchat"
         attribution="setup_tool"
         page_id="102448138509053"
-        // theme_color="..."
-        // logged_in_greeting="..."
-        // logged_out_greeting="..."
-        // greeting_dialog_display="..."
-        // greeting_dialog_delay="..."
         minimized="true"
-        // ref="..."
       />
     );
   }
