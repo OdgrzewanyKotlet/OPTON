@@ -160,13 +160,13 @@ class Photovoltaics extends Component {
             <h2>Kalkulacja oszczędności</h2>
             <p className={styles.CalculatorInfo}>
               Skorzystaj z poniższego kalkulatora i sprawdź ile zarobisz dzięki
-              fotowoltaice, oszczędzając na rachunkach za prąd dla Twojego domu
-              lub firmy.*
+              fotowoltaice, oszczędzając na rachunkach za energię elektryczną
+              dla Twojego domu lub firmy.*
             </p>
           </Fade>{" "}
           <Fade>
             <p className={styles.CalculatorTitle}>
-              Miesięczny rachunek za prąd
+              Miesięczny rachunek za energię elektryczną
             </p>
             <Calculator getValue={this.getSliderValue} />{" "}
           </Fade>
